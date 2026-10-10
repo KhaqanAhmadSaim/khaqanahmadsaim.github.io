@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 600" width="480" height="600" role="img" aria-label="Illustration: two people walking side by side along a winding path through soft green hills, beside a bending tree"><defs><clipPath id="arch"><path d="M40 600V250A200 200 0 0 1 440 250V600Z"/></clipPath></defs>
+<g clip-path="url(#arch)">
+<rect width="480" height="600" fill="#EEF2EC"/>
+<circle cx="318" cy="196" r="52" fill="#F3D3B5"/>
+<circle cx="318" cy="196" r="74" fill="none" stroke="#F3D3B5" stroke-width="2" opacity=".7"/>
+<path d="M40 372C110 330 190 336 255 356C325 378 385 334 440 340V600H40Z" fill="#DCE6DA"/>
+<path d="M40 438C130 398 215 418 300 428C362 436 402 410 440 402V600H40Z" fill="#B9CBB6"/>
+<path d="M40 500C140 470 250 490 330 500C382 506 420 490 440 486V600H40Z" fill="#8BA38B"/>
+<path d="M176 600C214 566 292 556 284 524C277 496 222 492 246 468C262 452 306 446 330 434L338 437C318 450 290 458 280 472C264 494 318 504 320 528C324 562 266 578 292 600Z" fill="#FBFAF6"/>
+<g transform="translate(256 526) scale(1.3)"><circle cx="0" cy="-34" r="8.5" fill="#3D5E4D"/><path d="M-11 0C-12-14-8-23 0-23C8-23 12-14 11 0Z" fill="#3D5E4D"/></g>
+<g transform="translate(285 523) scale(1.2)"><circle cx="0" cy="-34" r="8.5" fill="#6F8C72"/><path d="M-11 0C-12-14-8-23 0-23C8-23 12-14 11 0Z" fill="#6F8C72"/></g>
+<path d="M120 600C116 540 134 500 126 452C120 414 136 382 162 362" fill="none" stroke="#2C4639" stroke-width="8" stroke-linecap="round"/>
+<path d="M128 470C112 460 100 448 94 432" fill="none" stroke="#2C4639" stroke-width="5" stroke-linecap="round"/>
+<g transform="translate(150 370) rotate(-40) scale(3.2)" opacity="1"><path d="M0 0C-1-6 3-11 10-12C11-5 7 0 0 0Z" fill="#3D5E4D"/></g><g transform="translate(160 366) rotate(40) scale(3.0)" opacity="1"><path d="M0 0C-1-6 3-11 10-12C11-5 7 0 0 0Z" fill="#8BA38B"/></g><g transform="translate(140 360) rotate(-90) scale(2.6)" opacity="1"><path d="M0 0C-1-6 3-11 10-12C11-5 7 0 0 0Z" fill="#5E7F68"/></g><g transform="translate(166 356) rotate(-10) scale(2.3)" opacity="1"><path d="M0 0C-1-6 3-11 10-12C11-5 7 0 0 0Z" fill="#3D5E4D"/></g><g transform="translate(94 436) rotate(-110) scale(2.0)" opacity="1"><path d="M0 0C-1-6 3-11 10-12C11-5 7 0 0 0Z" fill="#8BA38B"/></g><g transform="translate(98 430) rotate(-50) scale(1.7)" opacity="1"><path d="M0 0C-1-6 3-11 10-12C11-5 7 0 0 0Z" fill="#5E7F68"/></g><g transform="translate(182 372) rotate(70) scale(1.8)" opacity="1"><path d="M0 0C-1-6 3-11 10-12C11-5 7 0 0 0Z" fill="#5E7F68"/></g>
+<g transform="translate(352 476) rotate(-30) scale(1.2)" opacity="1"><path d="M0 0C-1-6 3-11 10-12C11-5 7 0 0 0Z" fill="#3D5E4D"/></g><g transform="translate(356 478) rotate(40) scale(1.0)" opacity="1"><path d="M0 0C-1-6 3-11 10-12C11-5 7 0 0 0Z" fill="#B9CBB6"/></g>
+</g>
+<path d="M40 600V250A200 200 0 0 1 440 250V600" fill="none" stroke="#3D5E4D" stroke-opacity=".18" stroke-width="2"/>
+<g transform="translate(40 560) rotate(-55) scale(4.2)" opacity="1"><path d="M0 0C-1-6 3-11 10-12C11-5 7 0 0 0Z" fill="#8BA38B"/><path d="M1 -1 L8 -10" stroke="#3D5E4D" stroke-width="0.29" stroke-linecap="round" fill="none"/></g><g transform="translate(60 572) rotate(-10) scale(3.0)" opacity="1"><path d="M0 0C-1-6 3-11 10-12C11-5 7 0 0 0Z" fill="#3D5E4D"/></g>
+<g transform="translate(430 330) rotate(20) scale(3.0)" opacity="1"><path d="M0 0C-1-6 3-11 10-12C11-5 7 0 0 0Z" fill="#3D5E4D"/></g><g transform="translate(434 334) rotate(100) scale(2.4)" opacity="1"><path d="M0 0C-1-6 3-11 10-12C11-5 7 0 0 0Z" fill="#8BA38B"/></g>
+<g transform="translate(78 170) rotate(-70) scale(1.5)" opacity="1"><path d="M0 0C-1-6 3-11 10-12C11-5 7 0 0 0Z" fill="#D4834C"/></g><g transform="translate(84 166) rotate(10) scale(1.3)" opacity="1"><path d="M0 0C-1-6 3-11 10-12C11-5 7 0 0 0Z" fill="#B8662F"/></g></svg>

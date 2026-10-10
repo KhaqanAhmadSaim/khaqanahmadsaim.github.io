@@ -1,0 +1,1125 @@
+/*
+Theme Name: Own & Become
+Theme URI: https://ownandbecome.com/
+Description: A calm, warm block theme for the Own & Become psychotherapy practice. Child theme of Twenty Twenty-Five: everything is built with core WordPress blocks and editable in the Site Editor, no page builder required.
+Author: Own & Become
+Template: twentytwentyfive
+Version: 1.0.0
+Requires at least: 6.9
+Tested up to: 7.1
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: own-and-become
+*/
+
+/* ==========================================================================
+   Base & accessibility
+   ========================================================================== */
+
+html {
+	scroll-behavior: smooth;
+	scroll-padding-top: 6rem; /* keeps anchored sections clear of the sticky header */
+}
+
+@media (prefers-reduced-motion: reduce) {
+	html { scroll-behavior: auto; }
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+::selection {
+	background: var(--wp--preset--color--sage-soft);
+	color: var(--wp--preset--color--primary-deep);
+}
+
+/* One clear, strong focus ring everywhere (WCAG 2.2 focus appearance). */
+:where(a, button, input, select, textarea, summary, [tabindex]):focus-visible,
+.wp-element-button:focus-visible,
+.wp-block-navigation-item__content:focus-visible {
+	outline: 3px solid var(--wp--preset--color--primary-deep);
+	outline-offset: 3px;
+	box-shadow: 0 0 0 6px var(--wp--preset--color--base);
+	border-radius: 6px;
+}
+
+.wp-element-button:focus-visible {
+	border-radius: 999px;
+}
+
+:where(.has-primary-deep-background-color, .has-primary-background-color) :where(a, button, input, select, textarea, summary):focus-visible,
+:where(.has-primary-deep-background-color, .has-primary-background-color) .wp-element-button:focus-visible {
+	outline-color: var(--wp--preset--color--base);
+	box-shadow: 0 0 0 6px var(--wp--preset--color--primary-deep);
+}
+
+.skip-link.screen-reader-text:focus {
+	background: var(--wp--preset--color--surface);
+	color: var(--wp--preset--color--primary-deep);
+	font-weight: 700;
+	border-radius: 8px;
+}
+
+/* Comfortable reading measure for long text */
+.entry-content p,
+.wp-block-post-content p {
+	text-wrap: pretty;
+}
+
+h1, h2, h3 {
+	text-wrap: balance;
+}
+
+/* Links in body copy: thinner, offset underline that feels softer */
+.wp-block-post-content a:not(.wp-element-button),
+.ob-prose a:not(.wp-element-button) {
+	text-underline-offset: 0.18em;
+	text-decoration-thickness: 1px;
+}
+
+.wp-block-post-content a:not(.wp-element-button):hover {
+	text-decoration-thickness: 2px;
+}
+
+/* Emphasis in headings uses the logo's burgundy, in the serif italic */
+:where(h1, h2, h3) em {
+	color: var(--wp--preset--color--burgundy);
+	font-style: italic;
+}
+
+/* Placeholders left for the owner to fill in: easy to spot during review */
+mark.ob-placeholder,
+.ob-placeholder {
+	background: #FFF1D6;
+	color: #5A3A00;
+	border-radius: 4px;
+	padding: 0 0.25em;
+	font-weight: 600;
+}
+
+/* ==========================================================================
+   Header: slim info bar + sticky main navigation
+   ========================================================================== */
+
+/* Sections sit flush against each other; spacing comes from each section's own padding */
+.wp-site-blocks > * {
+	margin-block-start: 0;
+}
+
+.wp-block-post-content > .alignfull,
+.wp-block-post-content > .alignfull + * {
+	margin-block-start: 0;
+}
+
+.wp-site-blocks > header.wp-block-template-part {
+	--ob-topbar-h: 2.5rem;
+	position: sticky;
+	top: calc(-1 * var(--ob-topbar-h)); /* the info bar scrolls away; the nav stays */
+	z-index: 50;
+}
+
+.admin-bar .wp-site-blocks > header.wp-block-template-part {
+	top: calc(32px - var(--ob-topbar-h));
+}
+
+@media (max-width: 782px) {
+	.admin-bar .wp-site-blocks > header.wp-block-template-part { top: 0; }
+}
+
+.ob-topbar {
+	height: var(--ob-topbar-h, 2.5rem);
+	box-sizing: border-box;
+	font-size: 0.875rem;
+	line-height: 1.3;
+}
+
+.ob-topbar > .alignwide {
+	height: 100%;
+	align-items: center;
+}
+
+.ob-topbar a {
+	text-decoration: none;
+}
+
+.ob-topbar a:hover {
+	text-decoration: underline;
+}
+
+.ob-topbar .ob-topbar__item {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.4rem;
+	margin: 0;
+	white-space: nowrap;
+}
+
+.ob-topbar .ob-topbar__item::before {
+	content: "";
+	width: 0.95rem;
+	height: 0.95rem;
+	flex: none;
+	background: var(--wp--preset--color--sage-soft);
+	-webkit-mask: var(--ob-icon) center / contain no-repeat;
+	mask: var(--ob-icon) center / contain no-repeat;
+}
+
+.ob-topbar .ob-icon-phone { --ob-icon: url("assets/icons/ui-phone.svg"); }
+.ob-topbar .ob-icon-pin { --ob-icon: url("assets/icons/ui-pin.svg"); }
+.ob-topbar .ob-icon-lang { --ob-icon: url("assets/icons/ui-chat.svg"); }
+.ob-topbar .ob-icon-login { --ob-icon: url("assets/icons/ui-lock.svg"); }
+
+@media (max-width: 781px) {
+	.wp-site-blocks > header.wp-block-template-part { --ob-topbar-h: 0px; }
+	.ob-topbar { display: none !important; }
+}
+
+.ob-mainbar {
+	/* Solid (no backdrop-filter): a filter here would trap the full-screen mobile menu inside the bar */
+	background: var(--wp--preset--color--base);
+	border-bottom: 1px solid transparent;
+	transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.is-scrolled .ob-mainbar {
+	border-bottom-color: var(--wp--preset--color--line);
+	box-shadow: 0 6px 24px -18px rgba(44, 70, 57, 0.35);
+}
+
+.ob-brand {
+	text-decoration: none;
+}
+
+.ob-brand .wp-block-site-logo img {
+	height: auto;
+}
+
+.ob-brand .wp-block-site-title {
+	white-space: nowrap;
+}
+
+/* Navigation links: calm underline indicator instead of colour blocks */
+.ob-mainbar .wp-block-navigation .wp-block-navigation-item__content {
+	padding: 0.4rem 0.1rem;
+	border-bottom: 2px solid transparent;
+}
+
+.ob-mainbar .wp-block-navigation .current-menu-item > .wp-block-navigation-item__content,
+.ob-mainbar .wp-block-navigation .current-menu-ancestor > .wp-block-navigation-item__content {
+	border-bottom-color: var(--wp--preset--color--sage);
+}
+
+.ob-mainbar .wp-block-navigation .wp-block-navigation-item__content:hover {
+	text-decoration: none;
+	border-bottom-color: var(--wp--preset--color--copper);
+}
+
+/* Services dropdown: soft card */
+.ob-mainbar .wp-block-navigation .wp-block-navigation__submenu-container {
+	background: var(--wp--preset--color--surface) !important;
+	border: 1px solid var(--wp--preset--color--line) !important;
+	border-radius: 14px;
+	box-shadow: var(--wp--preset--shadow--lifted);
+	padding: 0.5rem !important;
+	min-width: 15rem !important;
+}
+
+.ob-mainbar .wp-block-navigation .wp-block-navigation__submenu-container .wp-block-navigation-item__content {
+	padding: 0.55rem 0.8rem !important;
+	border-radius: 8px;
+	border-bottom: 0;
+	font-weight: 600;
+}
+
+.ob-mainbar .wp-block-navigation .wp-block-navigation__submenu-container .wp-block-navigation-item__content:hover {
+	background: var(--wp--preset--color--tint);
+}
+
+/* The full menu needs ~1100px; below that use the clean overlay menu (core switches only at 600px) */
+@media (min-width: 600px) and (max-width: 1099px) {
+	.ob-mainbar .wp-block-navigation__responsive-container-open:not(.always-shown) {
+		display: flex !important;
+	}
+	.ob-mainbar .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
+		display: none !important;
+	}
+}
+
+.ob-mainbar .wp-block-navigation__responsive-container-open {
+	padding: 0.6rem;
+	border-radius: 999px;
+	border: 1px solid var(--wp--preset--color--line);
+	background: var(--wp--preset--color--surface);
+	color: var(--wp--preset--color--primary);
+}
+
+@media (max-width: 1099px) {
+	.ob-header-book { display: none !important; }
+}
+
+@media (min-width: 1100px) and (max-width: 1240px) {
+	.ob-mainbar .wp-block-navigation { gap: 1.1rem !important; font-size: 0.95rem; }
+}
+
+/* Mobile overlay menu */
+.wp-site-blocks > header.wp-block-template-part:has(.is-menu-open) {
+	z-index: 100000; /* above the cookie notice and the mobile action bar */
+}
+
+.ob-menu-overlay {
+	min-height: 100%;
+}
+
+.ob-menu-overlay .wp-block-navigation-overlay-close {
+	color: var(--wp--preset--color--primary);
+	background: var(--wp--preset--color--surface);
+	border: 1px solid var(--wp--preset--color--line);
+	border-radius: 999px;
+	padding: 0.45rem 0.9rem;
+	font-weight: 700;
+	font-size: 0.95rem;
+	display: inline-flex;
+	align-items: center;
+	gap: 0.3rem;
+	cursor: pointer;
+}
+
+/* In the mobile menu, show the Services pages as a simple indented list */
+.ob-mainbar .ob-menu-overlay .wp-block-navigation .wp-block-navigation__submenu-container {
+	position: static !important;
+	visibility: visible !important;
+	opacity: 1 !important;
+	height: auto !important;
+	width: auto !important;
+	min-width: 0 !important;
+	overflow: visible !important;
+	background: transparent !important;
+	border: 0 !important;
+	border-left: 2px solid var(--wp--preset--color--sage-soft) !important;
+	border-radius: 0;
+	box-shadow: none;
+	padding: 0.15rem 0 0.15rem 1rem !important;
+	margin: 0.35rem 0 0.25rem 0.2rem;
+}
+
+.ob-mainbar .ob-menu-overlay .wp-block-navigation .wp-block-navigation__submenu-container .wp-block-navigation-item__content {
+	padding: 0.3rem 0 !important;
+	font-family: var(--wp--preset--font-family--body);
+	font-size: 1.0625rem;
+}
+
+.ob-mainbar .ob-menu-overlay .wp-block-navigation .wp-block-navigation__submenu-container .wp-block-navigation-item__content:hover {
+	background: transparent;
+}
+
+.ob-menu-overlay .wp-block-navigation__submenu-icon {
+	display: none !important;
+}
+
+.ob-mainbar .ob-menu-overlay .wp-block-navigation .wp-block-navigation-item__content {
+	border-bottom: 0;
+}
+
+.ob-menu-overlay .wp-block-navigation .wp-block-navigation-submenu {
+	flex-direction: column;
+	align-items: flex-start !important;
+}
+
+.ob-menu-overlay .wp-block-navigation {
+	font-family: var(--wp--preset--font-family--heading);
+	font-weight: 500;
+}
+
+.ob-menu-overlay .wp-block-navigation .wp-block-navigation-item__content {
+	padding: 0.35rem 0;
+}
+
+.ob-menu-overlay .wp-block-navigation .wp-block-navigation__submenu-container {
+	padding-left: 1rem !important;
+	border-left: 2px solid var(--wp--preset--color--sage-soft) !important;
+	font-family: var(--wp--preset--font-family--body);
+	font-size: 1rem;
+	font-weight: 600;
+	gap: 0.15rem !important;
+}
+
+.ob-menu-overlay .wp-block-buttons .wp-block-button {
+	flex: 1 1 100%;
+}
+
+.ob-menu-overlay .wp-block-buttons .wp-block-button__link {
+	width: 100%;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+/* ==========================================================================
+   Mobile action bar: Book + Call always within thumb reach
+   ========================================================================== */
+
+.wp-block-buttons.ob-mobile-actions {
+	display: none !important;
+}
+
+@media (max-width: 781px) {
+	.wp-block-buttons.ob-mobile-actions {
+		display: flex !important;
+		position: fixed;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 60;
+		margin: 0 !important;
+		padding: 0.6rem 1rem calc(0.6rem + env(safe-area-inset-bottom));
+		gap: 0.6rem;
+		background: rgba(251, 250, 246, 0.97);
+		border-top: 1px solid var(--wp--preset--color--line);
+		box-shadow: 0 -8px 24px -18px rgba(44, 70, 57, 0.4);
+	}
+	.ob-mobile-actions .wp-block-button {
+		flex: 1 1 0;
+		margin: 0;
+	}
+	.ob-mobile-actions .wp-block-button:first-child { flex: 0 0 auto; }
+	.ob-mobile-actions .wp-block-button__link {
+		width: 100%;
+		min-height: 48px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0.7rem 1rem;
+		font-size: 1rem;
+	}
+	body { padding-bottom: calc(72px + env(safe-area-inset-bottom)); }
+}
+
+/* ==========================================================================
+   Reusable block styles (registered in functions.php)
+   ========================================================================== */
+
+/* Eyebrow label above section headings */
+.is-style-eyebrow {
+	font-size: 0.875rem !important;
+	font-weight: 700;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	color: var(--wp--preset--color--sage-text);
+	display: inline-flex;
+	align-items: center;
+	gap: 0.55rem;
+}
+
+.is-style-eyebrow::before {
+	content: "";
+	width: 1.1rem;
+	height: 1.1rem;
+	flex: none;
+	background: url("assets/icons/leaf-pair.svg") center / contain no-repeat;
+}
+
+.has-text-align-center.is-style-eyebrow {
+	display: flex;
+	justify-content: center;
+}
+
+:where(.has-primary-deep-background-color, .has-primary-background-color) .is-style-eyebrow {
+	color: var(--wp--preset--color--sage-soft);
+}
+
+/* Cards */
+.is-style-card {
+	background: var(--wp--preset--color--surface);
+	border: 1px solid var(--wp--preset--color--line);
+	border-radius: 16px;
+	box-shadow: var(--wp--preset--shadow--soft);
+}
+
+.is-style-card-tint {
+	background: var(--wp--preset--color--tint);
+	border: 1px solid rgba(139, 163, 139, 0.28);
+	border-radius: 16px;
+}
+
+.is-style-card,
+.is-style-card-tint {
+	transition: box-shadow 0.35s ease, transform 0.35s ease, border-color 0.35s ease;
+}
+
+.is-style-card:has(a:hover),
+.is-style-card-tint:has(a:hover) {
+	box-shadow: var(--wp--preset--shadow--lifted);
+	border-color: rgba(139, 163, 139, 0.55);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.is-style-card:has(a:hover) { transform: translateY(-2px); }
+}
+
+/* Whole card clickable when it contains a "stretched" link */
+.ob-card-link {
+	position: relative;
+}
+
+.ob-card-link .ob-stretch a::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	border-radius: inherit;
+}
+
+/* Section with a gentle domed top edge: an organic curve between sections */
+.is-style-section-curve {
+	border-top-left-radius: 50% clamp(24px, 4vw, 56px);
+	border-top-right-radius: 50% clamp(24px, 4vw, 56px);
+}
+
+/* Leaf-curve divider: two paired curves with the logo's copper leaves */
+hr.is-style-leaf-curve,
+.wp-block-separator.is-style-leaf-curve {
+	border: 0 !important;
+	height: 34px;
+	width: min(260px, 70%) !important;
+	max-width: 260px !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	background: url("assets/images/leaf-curve-divider.svg") center / contain no-repeat;
+	opacity: 1;
+}
+
+/* Lists with small leaf bullets */
+ul.is-style-leaf-list {
+	list-style: none;
+	padding-left: 0;
+}
+
+ul.is-style-leaf-list > li {
+	position: relative;
+	padding-left: 2rem;
+	margin-bottom: 0.6rem;
+}
+
+ul.is-style-leaf-list > li::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0.32em;
+	width: 1.15rem;
+	height: 1.15rem;
+	background: url("assets/icons/leaf-bullet.svg") center / contain no-repeat;
+}
+
+/* Images */
+.wp-block-image.is-style-arch img,
+.wp-block-image.is-style-arch .components-resizable-box__container {
+	border-radius: 999px 999px 20px 20px;
+}
+
+.wp-block-image.is-style-soft img {
+	border-radius: 16px;
+}
+
+/* Step number */
+.is-style-step-number {
+	display: inline-flex !important;
+	align-items: center;
+	justify-content: center;
+	width: 3rem;
+	height: 3rem;
+	border-radius: 50% 50% 50% 8px; /* leaf-like */
+	background: var(--wp--preset--color--sage-soft);
+	color: var(--wp--preset--color--primary-deep);
+	font-family: var(--wp--preset--font-family--heading);
+	font-size: 1.375rem !important;
+	font-weight: 600;
+	line-height: 1 !important;
+	margin: 0;
+}
+
+/* ==========================================================================
+   Section patterns
+   ========================================================================== */
+
+/* Hero */
+.ob-hero {
+	position: relative;
+	overflow: hidden;
+}
+
+.ob-hero::before {
+	content: "";
+	position: absolute;
+	width: min(70vw, 860px);
+	aspect-ratio: 1;
+	right: -18%;
+	top: -30%;
+	border-radius: 58% 42% 55% 45% / 52% 48% 52% 48%;
+	background: radial-gradient(closest-side, rgba(220, 230, 218, 0.95), rgba(238, 242, 236, 0));
+	pointer-events: none;
+	z-index: 0;
+}
+
+.ob-hero > * {
+	position: relative;
+	z-index: 1;
+}
+
+.ob-hero .ob-hero__lede {
+	max-width: 36rem;
+}
+
+/* Page hero (inner pages) */
+.ob-page-hero {
+	position: relative;
+	overflow: hidden;
+}
+
+.ob-page-hero::after {
+	content: "";
+	position: absolute;
+	right: clamp(-80px, -4vw, -20px);
+	bottom: -30px;
+	width: clamp(140px, 22vw, 280px);
+	aspect-ratio: 1;
+	background: url("assets/images/leaf-sprig.svg") center / contain no-repeat;
+	opacity: 0.55;
+	pointer-events: none;
+}
+
+.ob-page-hero > * {
+	position: relative;
+	z-index: 1;
+}
+
+/* Reassurance row */
+.ob-reassure .ob-reassure__item {
+	display: flex;
+	gap: 0.85rem;
+	align-items: center;
+}
+
+.ob-reassure .ob-reassure__item .wp-block-image {
+	flex: none;
+	margin: 0;
+}
+
+.ob-reassure .ob-reassure__item p {
+	margin: 0;
+	font-weight: 600;
+	line-height: 1.35;
+	color: var(--wp--preset--color--primary-deep);
+}
+
+/* Icon images inside cards */
+.ob-icon {
+	margin-bottom: 0 !important;
+}
+
+.ob-icon img {
+	width: 3rem;
+	height: 3rem;
+}
+
+.ob-icon--sm img {
+	width: 2.5rem;
+	height: 2.5rem;
+}
+
+/* Own / Become: two halves joined by an overlapping leaf seam */
+.ob-two-part {
+	position: relative;
+}
+
+@media (min-width: 782px) {
+	.ob-two-part > .wp-block-column:first-child { border-radius: 24px 6px 6px 24px; }
+	.ob-two-part > .wp-block-column:last-child { border-radius: 6px 24px 24px 6px; }
+	.ob-two-part::after {
+		content: "";
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		width: 64px;
+		height: 64px;
+		transform: translate(-50%, -50%);
+		border-radius: 50%;
+		background: var(--wp--preset--color--base) url("assets/icons/leaf-pair.svg") center / 30px no-repeat;
+		box-shadow: 0 0 0 1px var(--wp--preset--color--line), var(--wp--preset--shadow--soft);
+		z-index: 2;
+	}
+}
+
+.ob-two-part > .wp-block-column {
+	border-radius: 20px;
+}
+
+/* Areas grid: compact leaf chips */
+.ob-area-chips {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.ob-area-chips li {
+	background: var(--wp--preset--color--surface);
+	border: 1px solid var(--wp--preset--color--line);
+	border-radius: 999px;
+	padding: 0.35rem 0.9rem 0.35rem 2rem;
+	font-size: 0.95rem;
+	font-weight: 600;
+	color: var(--wp--preset--color--primary-deep);
+	position: relative;
+	line-height: 1.4;
+}
+
+.ob-area-chips li::before {
+	content: "";
+	position: absolute;
+	left: 0.7rem;
+	top: 50%;
+	width: 0.95rem;
+	height: 0.95rem;
+	transform: translateY(-50%);
+	background: url("assets/icons/leaf-bullet.svg") center / contain no-repeat;
+}
+
+/* Therapist card portrait */
+.ob-portrait img {
+	aspect-ratio: 4 / 5;
+	object-fit: cover;
+	border-radius: 999px 999px 20px 20px;
+	background: var(--wp--preset--color--tint);
+}
+
+/* Steps: a winding connector between the three steps on wide screens */
+@media (min-width: 782px) {
+	.ob-steps {
+		position: relative;
+	}
+	.ob-steps::before {
+		content: "";
+		position: absolute;
+		left: 12%;
+		right: 12%;
+		top: 1.5rem;
+		height: 24px;
+		background: url("assets/images/winding-line.svg") center / 100% 100% no-repeat;
+		z-index: 0;
+		opacity: 0.9;
+	}
+	.ob-steps > .wp-block-column { position: relative; z-index: 1; }
+}
+
+/* Crisis notice */
+.ob-crisis {
+	border-left: 4px solid var(--wp--preset--color--copper) !important;
+}
+
+.ob-crisis p {
+	margin: 0;
+}
+
+.ob-crisis a,
+.ob-footer .ob-crisis a {
+	font-weight: 700;
+	text-decoration: underline;
+	text-underline-offset: 0.18em;
+}
+
+/* Final CTA band */
+.ob-cta {
+	position: relative;
+	overflow: hidden;
+	isolation: isolate;
+}
+
+.ob-cta::before,
+.ob-cta::after {
+	content: "";
+	position: absolute;
+	width: clamp(160px, 26vw, 320px);
+	aspect-ratio: 1;
+	background: url("assets/images/leaf-sprig-light.svg") center / contain no-repeat;
+	opacity: 0.35;
+	z-index: -1;
+	pointer-events: none;
+}
+
+.ob-cta::before { left: -40px; bottom: -60px; transform: rotate(-18deg); }
+.ob-cta::after { right: -40px; top: -60px; transform: scaleX(-1) rotate(-18deg); }
+
+/* ==========================================================================
+   FAQ accordion (core Accordion block)
+   ========================================================================== */
+
+.wp-block-accordion-item {
+	background: var(--wp--preset--color--surface);
+	border: 1px solid var(--wp--preset--color--line);
+	border-radius: 14px;
+	overflow: hidden;
+	transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.wp-block-accordion-item.is-open {
+	border-color: rgba(139, 163, 139, 0.6);
+	box-shadow: var(--wp--preset--shadow--soft);
+}
+
+.wp-block-accordion-heading {
+	margin: 0 !important;
+	font-family: var(--wp--preset--font-family--heading);
+	font-size: 1.1875rem !important;
+	font-weight: 500;
+	color: var(--wp--preset--color--primary-deep);
+}
+
+.wp-block-accordion-heading__toggle {
+	padding: 1.1rem 1.25rem !important;
+	width: 100%;
+	text-align: left;
+	gap: 1rem;
+	line-height: 1.4;
+}
+
+.wp-block-accordion-heading__toggle:hover .wp-block-accordion-heading__toggle-title {
+	text-decoration: underline;
+	text-underline-offset: 0.2em;
+	text-decoration-thickness: 1px;
+}
+
+.wp-block-accordion-heading__toggle-icon {
+	color: var(--wp--preset--color--primary);
+	background: var(--wp--preset--color--tint);
+	border-radius: 50%;
+	flex: none;
+	width: 2rem !important;
+	height: 2rem !important;
+	display: inline-flex !important;
+	align-items: center;
+	justify-content: center;
+}
+
+.wp-block-accordion-panel {
+	padding: 0 1.25rem 1.25rem !important;
+	color: var(--wp--preset--color--contrast);
+}
+
+.wp-block-accordion-panel > *:first-child { margin-top: 0; }
+
+/* ==========================================================================
+   Forms (Contact Form 7)
+   ========================================================================== */
+
+.ob-form .wpcf7 {
+	--ob-field-border: #B9C4B6;
+}
+
+.ob-form .wpcf7-form > p,
+.ob-form .ob-field {
+	margin: 0 0 1.15rem;
+}
+
+.ob-form label,
+.ob-form .ob-legend {
+	display: block;
+	font-weight: 700;
+	color: var(--wp--preset--color--primary-deep);
+	margin-bottom: 0.35rem;
+	font-size: 1rem;
+}
+
+.ob-form .ob-hint {
+	display: block;
+	font-weight: 400;
+	font-size: 0.9375rem;
+	color: var(--wp--preset--color--muted);
+	margin-top: 0.15rem;
+}
+
+.ob-form input[type="text"],
+.ob-form input[type="email"],
+.ob-form input[type="tel"],
+.ob-form select,
+.ob-form textarea {
+	width: 100%;
+	font: inherit;
+	font-size: 1.0625rem;
+	color: var(--wp--preset--color--contrast);
+	background: var(--wp--preset--color--surface);
+	border: 1.5px solid var(--ob-field-border);
+	border-radius: 12px;
+	padding: 0.8rem 1rem;
+	min-height: 48px;
+	box-sizing: border-box;
+	transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ob-form textarea {
+	min-height: 8rem;
+	resize: vertical;
+}
+
+.ob-form input:focus,
+.ob-form select:focus,
+.ob-form textarea:focus {
+	border-color: var(--wp--preset--color--primary);
+	box-shadow: 0 0 0 3px rgba(61, 94, 77, 0.2);
+	outline: none;
+}
+
+.ob-form .ob-row {
+	display: grid;
+	gap: 0 1rem;
+	grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+	.ob-form .ob-row--2 { grid-template-columns: 1fr 1fr; }
+}
+
+.ob-form fieldset {
+	border: 0;
+	padding: 0;
+	margin: 0 0 1.15rem;
+	min-width: 0;
+}
+
+.ob-form legend {
+	padding: 0;
+}
+
+.ob-form .wpcf7-list-item {
+	margin: 0 0.5rem 0.5rem 0;
+	display: inline-block;
+}
+
+.ob-form .wpcf7-list-item label {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	font-weight: 600;
+	font-size: 0.98rem;
+	color: var(--wp--preset--color--contrast);
+	margin: 0;
+	padding: 0.5rem 0.9rem;
+	border: 1.5px solid var(--wp--preset--color--line);
+	border-radius: 999px;
+	background: var(--wp--preset--color--surface);
+	cursor: pointer;
+	min-height: 44px;
+	box-sizing: border-box;
+}
+
+.ob-form .wpcf7-list-item label:has(input:checked) {
+	border-color: var(--wp--preset--color--primary);
+	background: var(--wp--preset--color--tint);
+}
+
+.ob-form .wpcf7-list-item input {
+	width: 1.1rem;
+	height: 1.1rem;
+	accent-color: var(--wp--preset--color--primary);
+	margin: 0;
+}
+
+.ob-form .wpcf7-acceptance .wpcf7-list-item label {
+	border: 0;
+	padding: 0;
+	background: none;
+	border-radius: 0;
+	font-weight: 400;
+	align-items: flex-start;
+	min-height: 0;
+}
+
+.ob-form .wpcf7-acceptance .wpcf7-list-item input { margin-top: 0.3rem; }
+
+.ob-form .wpcf7-submit {
+	background: var(--wp--preset--color--primary);
+	color: var(--wp--preset--color--surface);
+	border: 2px solid var(--wp--preset--color--primary);
+	border-radius: 999px;
+	padding: 0.85rem 1.8rem;
+	font: inherit;
+	font-weight: 700;
+	cursor: pointer;
+	min-height: 48px;
+}
+
+.ob-form .wpcf7-submit:hover {
+	background: var(--wp--preset--color--primary-deep);
+}
+
+.ob-form .wpcf7-not-valid-tip {
+	color: var(--wp--preset--color--burgundy);
+	font-size: 0.9375rem;
+	font-weight: 600;
+	margin-top: 0.3rem;
+}
+
+.ob-form .wpcf7 form .wpcf7-response-output {
+	margin: 1rem 0 0;
+	padding: 0.9rem 1.1rem;
+	border-radius: 12px;
+	border-width: 1.5px;
+}
+
+.ob-form .wpcf7 form.sent .wpcf7-response-output {
+	border-color: var(--wp--preset--color--primary);
+	background: var(--wp--preset--color--tint);
+	color: var(--wp--preset--color--primary-deep);
+}
+
+.ob-form .wpcf7-spinner { vertical-align: middle; }
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.ob-footer a {
+	text-decoration: none;
+}
+
+.ob-footer a:hover {
+	text-decoration: underline;
+	text-underline-offset: 0.2em;
+}
+
+.ob-footer .wp-block-navigation .wp-block-navigation-item__content {
+	padding: 0.15rem 0;
+}
+
+.ob-footer .wp-block-social-links .wp-social-link {
+	background: rgba(251, 250, 246, 0.1) !important;
+	color: var(--wp--preset--color--base) !important;
+}
+
+.ob-footer-mark img {
+	filter: none;
+}
+
+.ob-footer .ob-crisis {
+	border-left-color: var(--wp--preset--color--copper) !important;
+}
+
+/* ==========================================================================
+   Cookie notice (simple, essential-cookies-only notice)
+   ========================================================================== */
+
+.ob-cookie {
+	position: fixed;
+	z-index: 70;
+	left: 1rem;
+	right: 1rem;
+	bottom: 1rem;
+	max-width: 30rem;
+	margin: 0 !important;
+	display: none !important;
+}
+
+.ob-cookie.is-visible {
+	display: block !important;
+}
+
+@media (max-width: 781px) {
+	.ob-cookie { bottom: calc(80px + env(safe-area-inset-bottom)); }
+}
+
+.ob-cookie p {
+	font-size: 0.9375rem;
+	line-height: 1.55;
+}
+
+/* ==========================================================================
+   Blog / resources
+   ========================================================================== */
+
+.ob-post-card .wp-block-post-featured-image img {
+	border-radius: 12px;
+	aspect-ratio: 16 / 10;
+	object-fit: cover;
+}
+
+.ob-post-card .wp-block-post-title a:hover {
+	text-decoration: underline;
+}
+
+.ob-post-card .wp-block-post-terms a {
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 0.8125rem;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--wp--preset--color--sage-text);
+}
+
+.wp-block-query-pagination a {
+	text-decoration: none;
+	font-weight: 700;
+}
+
+/* ==========================================================================
+   Gentle motion: leaf shapes and cards fade/rise into view
+   Only applied when JS runs and the visitor hasn't asked for reduced motion.
+   ========================================================================== */
+
+@media (prefers-reduced-motion: no-preference) {
+	.ob-motion .ob-reveal {
+		opacity: 0;
+		transform: translateY(14px);
+		transition: opacity 0.9s ease, transform 0.9s cubic-bezier(0.2, 0.6, 0.2, 1);
+	}
+	.ob-motion .ob-reveal.is-visible {
+		opacity: 1;
+		transform: none;
+	}
+	.ob-motion .ob-reveal-group > *:nth-child(2) { transition-delay: 0.08s; }
+	.ob-motion .ob-reveal-group > *:nth-child(3) { transition-delay: 0.16s; }
+	.ob-motion .ob-reveal-group > *:nth-child(4) { transition-delay: 0.24s; }
+	.ob-motion .ob-reveal-group > *:nth-child(5) { transition-delay: 0.32s; }
+	.ob-motion .ob-reveal-group > *:nth-child(6) { transition-delay: 0.40s; }
+
+	.ob-motion .ob-hero::before {
+		animation: ob-breathe 14s ease-in-out infinite alternate;
+	}
+}
+
+@keyframes ob-breathe {
+	from { transform: scale(1) rotate(0deg); }
+	to { transform: scale(1.04) rotate(4deg); }
+}
+
+/* Editor: never hide content while editing */
+.editor-styles-wrapper .ob-reveal {
+	opacity: 1 !important;
+	transform: none !important;
+}
+
+/* Print */
+@media print {
+	.ob-site-header, .ob-mobile-actions, .ob-cookie, .ob-cta::before, .ob-cta::after { display: none !important; }
+}
+
+.ob-mainbar .ob-menu-overlay .wp-block-navigation > .wp-block-navigation__container > .wp-block-navigation-item > .wp-block-navigation-item__content {
+	font-size: 1.375rem;
+	color: var(--wp--preset--color--primary-deep);
+}
+
+/* Icons never shrink next to long text */
+.wp-block-image.ob-icon {
+	flex-shrink: 0;
+}
+
+/* Blog posts: calmer heading sizes inside the article */
+.ob-prose h2 {
+	font-size: var(--wp--preset--font-size--x-large);
+	margin-top: 2.25rem;
+}
+
+.ob-prose h3 {
+	font-size: var(--wp--preset--font-size--large);
+}
