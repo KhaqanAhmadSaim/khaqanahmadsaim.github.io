@@ -69,14 +69,6 @@ function ob_setup_pages() {
 			'seo'     => array( 'Teen Therapy Online for Ages 14+ | Own & Become', 'A judgment-free, online space for teens aged 14 and over to talk about stress, emotions, relationships and growing up, at their own pace.' ),
 		),
 		array(
-			'slug'    => 'online-therapy',
-			'parent'  => 'services',
-			'title'   => 'Online Therapy',
-			'pattern' => 'page-online-therapy',
-			'order'   => 34,
-			'seo'     => array( 'Online Therapy in Ontario & Across Canada | Own & Become', 'Secure video therapy from the comfort of home, for people in Ontario, BC, Alberta, Saskatchewan, Manitoba, New Brunswick, Newfoundland and Labrador and the territories.' ),
-		),
-		array(
 			'slug'    => 'areas-we-support',
 			'title'   => 'Areas We Support',
 			'pattern' => 'page-areas',
@@ -168,7 +160,6 @@ function ob_setup_menu_items() {
 				array( 'label' => 'Individual Therapy', 'page' => 'individual-therapy' ),
 				array( 'label' => 'Couples Therapy', 'page' => 'couples-therapy' ),
 				array( 'label' => 'Teen Therapy (14+)', 'page' => 'teen-therapy' ),
-				array( 'label' => 'Online Therapy', 'page' => 'online-therapy' ),
 				array( 'label' => 'Areas We Support', 'page' => 'areas-we-support' ),
 				array( 'label' => 'How It Works', 'page' => 'how-it-works' ),
 			),

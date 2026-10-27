@@ -76,7 +76,7 @@
 
 <!-- wp:accordion-panel -->
 <div role="region" class="wp-block-accordion-panel"><!-- wp:paragraph -->
-<p>It’s different for everyone. Some people come for a handful of sessions to work on something specific; others find longer-term support helpful. We’ll check in regularly about how things are going, and you’re always in charge of the pace.</p>
+<p>It’s different for everyone. Some people come for a handful of sessions to work on something specific; others find long-term support helpful. We’ll have regular check-ins about how things are going, and you’re always in charge of the pace.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:accordion-panel --></div>
 <!-- /wp:accordion-item -->
@@ -100,7 +100,7 @@
 
 <!-- wp:accordion-panel -->
 <div role="region" class="wp-block-accordion-panel"><!-- wp:paragraph -->
-<p>Yes. What you share in therapy is kept private and stored securely. There are a few limits set by law, for example if there is a serious risk of harm to you or someone else, or if a child may be at risk. We’ll explain these clearly before we begin, so there are no surprises.</p>
+<p>Yes. What you share in therapy is kept private. Your personal health information is collected, stored and protected in line with Ontario’s Personal Health Information Protection Act (PHIPA). There are a few limits set by law, for example if there is a serious risk of harm to you or someone else, or if a child may be at risk. We’ll explain these clearly before we begin, so there are no surprises.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:accordion-panel --></div>
 <!-- /wp:accordion-item -->

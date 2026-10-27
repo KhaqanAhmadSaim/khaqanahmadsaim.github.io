@@ -66,7 +66,7 @@
 <!-- /wp:group -->
 
 <!-- wp:heading {"textAlign":"center","fontSize":"large","level":3} -->
-<h3 class="wp-block-heading has-text-align-center has-large-font-size">Have a conversation</h3>
+<h3 class="wp-block-heading has-text-align-center has-large-font-size">Get connected</h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center"} -->
@@ -82,7 +82,7 @@
 <!-- /wp:group -->
 
 <!-- wp:heading {"textAlign":"center","fontSize":"large","level":3} -->
-<h3 class="wp-block-heading has-text-align-center has-large-font-size">Book your first session</h3>
+<h3 class="wp-block-heading has-text-align-center has-large-font-size">Book your session</h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center"} -->
@@ -136,7 +136,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>We’ll work together on what matters most to you, using approaches that suit you. We’ll check in regularly about what’s helping and what to adjust.</p>
+<p>We’ll work together on what matters most to you, using approaches that suit you. We’ll have regular check-ins about what’s helping and what to adjust.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -153,41 +153,19 @@
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"metadata":{"name":"Online and privacy"},"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70)"><!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
-<div class="wp-block-group alignwide"><!-- wp:columns {"verticalAlignment":"top","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|60","top":"var:preset|spacing|50"}}}} -->
-<div class="wp-block-columns are-vertically-aligned-top"><!-- wp:column {"width":"50%","verticalAlignment":"top"} -->
-<div class="wp-block-column is-vertically-aligned-top" style="flex-basis:50%"><!-- wp:group {"style":{"spacing":{"blockGap":"1.1rem"}},"layout":{"type":"default"}} -->
-<div class="wp-block-group"><!-- wp:heading {"fontSize":"x-large"} -->
-<h2 class="wp-block-heading has-x-large-font-size">Online sessions, made simple</h2>
-<!-- /wp:heading -->
-
-<!-- wp:paragraph -->
-<p>All sessions happen by video. You’ll need a private space, a device with a camera, and a steady internet connection. That’s it.</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph {"style":{"typography":{"fontWeight":"700"}}} -->
-<p style="font-weight:700"><a href="/services/online-therapy/">Learn more about online therapy →</a></p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group --></div>
-<!-- /wp:column -->
-
-<!-- wp:column {"width":"50%","verticalAlignment":"top"} -->
-<div class="wp-block-column is-vertically-aligned-top" style="flex-basis:50%"><!-- wp:group {"style":{"spacing":{"blockGap":"1.1rem"}},"layout":{"type":"default"}} -->
+<!-- wp:group {"metadata":{"name":"Privacy"},"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70)"><!-- wp:group {"style":{"spacing":{"blockGap":"1rem"}},"layout":{"type":"constrained","contentSize":"760px"}} -->
 <div class="wp-block-group"><!-- wp:heading {"fontSize":"x-large"} -->
 <h2 class="wp-block-heading has-x-large-font-size">Your privacy</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>What you share in therapy stays private, with a few limits required by law that we’ll explain clearly before we begin. Your records are kept securely.</p>
+<p>What you share in therapy stays private, with a few limits required by law that we’ll explain clearly before we begin. Your records are kept securely, in line with PHIPA.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"fontWeight":"700"}}} -->
 <p style="font-weight:700"><a href="/privacy-policy/">Read our Privacy Policy →</a></p>
 <!-- /wp:paragraph --></div>
-<!-- /wp:group --></div>
-<!-- /wp:column --></div>
-<!-- /wp:columns --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 

@@ -49,7 +49,7 @@
 <!-- /wp:group -->
 
 <!-- wp:heading {"textAlign":"center","fontSize":"large","level":3} -->
-<h3 class="wp-block-heading has-text-align-center has-large-font-size">Have a conversation</h3>
+<h3 class="wp-block-heading has-text-align-center has-large-font-size">Get connected</h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center"} -->
@@ -65,7 +65,7 @@
 <!-- /wp:group -->
 
 <!-- wp:heading {"textAlign":"center","fontSize":"large","level":3} -->
-<h3 class="wp-block-heading has-text-align-center has-large-font-size">Book your first session</h3>
+<h3 class="wp-block-heading has-text-align-center has-large-font-size">Book your session</h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center"} -->

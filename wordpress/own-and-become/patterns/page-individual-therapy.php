@@ -38,10 +38,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"metadata":{"name":"Who it is for"},"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70)"><!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
-<div class="wp-block-group alignwide"><!-- wp:columns {"verticalAlignment":"top","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|60","top":"var:preset|spacing|50"}}}} -->
-<div class="wp-block-columns are-vertically-aligned-top"><!-- wp:column {"width":"58%","verticalAlignment":"top"} -->
-<div class="wp-block-column is-vertically-aligned-top" style="flex-basis:58%"><!-- wp:group {"style":{"spacing":{"blockGap":"1.1rem"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70)"><!-- wp:group {"style":{"spacing":{"blockGap":"1.2rem"}},"layout":{"type":"constrained","contentSize":"760px"}} -->
 <div class="wp-block-group"><!-- wp:heading {"fontSize":"x-large"} -->
 <h2 class="wp-block-heading has-x-large-font-size">Who it’s for</h2>
 <!-- /wp:heading -->
@@ -63,41 +60,6 @@
 <li>First-timers who aren’t sure therapy is “for them” yet</li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list --></div>
-<!-- /wp:group --></div>
-<!-- /wp:column -->
-
-<!-- wp:column {"width":"42%","verticalAlignment":"top"} -->
-<div class="wp-block-column is-vertically-aligned-top" style="flex-basis:42%"><!-- wp:group {"className":"is-style-card-tint","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|40","right":"var:preset|spacing|40"},"blockGap":"0.85rem"},"dimensions":{"minHeight":"100%"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"}} -->
-<div class="wp-block-group is-style-card-tint" style="min-height:100%;padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)"><!-- wp:heading {"fontSize":"large","level":3} -->
-<h3 class="wp-block-heading has-large-font-size">Session details</h3>
-<!-- /wp:heading -->
-
-<!-- wp:list {"className":"is-style-leaf-list"} -->
-<ul class="wp-block-list is-style-leaf-list"><!-- wp:list-item -->
-<li><strong>Format:</strong> online, by video</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li><strong>Languages:</strong> English, Urdu or Hindi</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li><strong>Session length:</strong> <mark class="ob-placeholder">[ADD SESSION LENGTH]</mark></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li><strong>Fees:</strong> shared in your free consult</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
-
-<!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/book/">Book a Free Consult</a></div>
-<!-- /wp:button --></div>
-<!-- /wp:buttons --></div>
-<!-- /wp:group --></div>
-<!-- /wp:column --></div>
-<!-- /wp:columns --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
@@ -189,7 +151,7 @@
 
 <!-- wp:accordion-panel -->
 <div role="region" class="wp-block-accordion-panel"><!-- wp:paragraph -->
-<p>It’s different for everyone. Some people come for a handful of sessions to work on something specific; others find longer-term support helpful. We’ll check in regularly about how things are going, and you’re always in charge of the pace.</p>
+<p>It’s different for everyone. Some people come for a handful of sessions to work on something specific; others find long-term support helpful. We’ll have regular check-ins about how things are going, and you’re always in charge of the pace.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:accordion-panel --></div>
 <!-- /wp:accordion-item -->
@@ -201,7 +163,7 @@
 
 <!-- wp:accordion-panel -->
 <div role="region" class="wp-block-accordion-panel"><!-- wp:paragraph -->
-<p>Yes. What you share in therapy is kept private and stored securely. There are a few limits set by law, for example if there is a serious risk of harm to you or someone else, or if a child may be at risk. We’ll explain these clearly before we begin, so there are no surprises.</p>
+<p>Yes. What you share in therapy is kept private. Your personal health information is collected, stored and protected in line with Ontario’s Personal Health Information Protection Act (PHIPA). There are a few limits set by law, for example if there is a serious risk of harm to you or someone else, or if a child may be at risk. We’ll explain these clearly before we begin, so there are no surprises.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:accordion-panel --></div>
 <!-- /wp:accordion-item --></div>

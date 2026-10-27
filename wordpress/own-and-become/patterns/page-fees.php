@@ -93,10 +93,6 @@
 
 <!-- wp:list {"className":"is-style-leaf-list"} -->
 <ul class="wp-block-list is-style-leaf-list"><!-- wp:list-item -->
-<li><strong>Session length:</strong> <mark class="ob-placeholder">[ADD SESSION LENGTH(S)]</mark></li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
 <li><strong>Payment:</strong> <mark class="ob-placeholder">[ADD accepted payment methods and when payment is taken]</mark></li>
 <!-- /wp:list-item -->
 

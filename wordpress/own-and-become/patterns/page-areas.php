@@ -21,7 +21,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"fontSize":"large"} -->
-<p class="has-large-font-size">These are some of the things people bring to therapy. You don’t need to fit neatly into a category. Many people come with a mix of things, or simply a feeling that something needs to change.</p>
+<p class="has-large-font-size">Here are some of the areas people often bring to therapy. You don’t have to fit into one category. Many people come with a mix of concerns, or simply a sense that something needs to change.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -231,7 +231,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Ayesha also often supports people with anxiety, self-doubt and feeling stuck. If you’re not sure whether we can help, reach out. If we’re not the right fit, we’ll do our best to point you toward someone who is.</p>
+<p>Ayesha also often supports people with anxiety, self-doubt and feeling stuck. If you’re not sure whether we can help, reach out. If we’re not the right fit, we’ll do our best to refer you to someone who is.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->

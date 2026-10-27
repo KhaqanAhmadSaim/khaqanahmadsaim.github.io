@@ -255,7 +255,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>We welcome people of all genders, sexual orientations, cultures, faiths, abilities, body sizes and family structures. We work in English, Urdu and Hindi, and we bring curiosity and respect to the cultural, spiritual and family contexts that shape your story.</p>
+<p>We welcome people of all genders, sexual orientations, cultures, faiths, abilities, body sizes and family structures. We work in English, Urdu and Hindi, and translation is provided for <mark class="ob-placeholder">[ADD LANGUAGES]</mark> languages.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"fontSize":"small"} -->

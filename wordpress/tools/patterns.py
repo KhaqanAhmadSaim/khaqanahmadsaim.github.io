@@ -67,7 +67,7 @@ def leaf_list(items):
     return ul(items, {'className': 'is-style-leaf-list'})
 
 def page_hero(eyebrow, title, lede, buttons_markup=None, image_markup=None):
-    left = J(p(eyebrow, {'className': 'is-style-eyebrow'}), heading(title, 1, {'fontSize': 'xx-large'}), p(lede, {'fontSize': 'large'}), buttons_markup or '')
+    left = J(p(eyebrow, {'className': 'is-style-eyebrow'}), heading(title, 1, {'fontSize': 'xx-large'}), p(lede, {'fontSize': 'large'}) if lede else '', buttons_markup or '')
     if image_markup:
         inner = columns(column(group(left, {'style': {'spacing': {'blockGap': '1.1rem'}}, 'layout': {'type': 'default'}}), {'width': '58%', 'verticalAlignment': 'center'}),
                         column(image_markup, {'width': '42%', 'verticalAlignment': 'center'}),
@@ -121,8 +121,7 @@ write('service-card', 'Service card', service_card('individual', 'Service name',
 SERVICES = [
     ('individual', 'Individual therapy', 'One-on-one time to slow down, make sense of what you’re carrying, and build tools that fit your real life.', '/services/individual-therapy/'),
     ('couples', 'Couples therapy', 'For partners who want to understand each other again, talk with more care, and move through change together, including pre-marital support.', '/services/couples-therapy/'),
-    ('teen', 'Teen therapy (14+)', 'A judgment-free space for teens to talk about stress, emotions, relationships and growing up, at their own pace.', '/services/teen-therapy/'),
-    ('online', 'Online therapy', 'Every session happens by video, so support fits around your life, from Ontario to many provinces and territories across Canada.', '/services/online-therapy/'),
+    ('teen', 'Teen therapy (14+)', 'A judgment-free space for teens to talk about stress, emotions, relationships and growing up.', '/services/teen-therapy/'),
 ]
 
 SERVICES_GRID = grid([service_card(*s) for s in SERVICES], min_w='15rem', cls='ob-reveal-group')
@@ -143,8 +142,8 @@ def area_card(ic, title, items, tint=False):
 
 STEPS = [
     ('calendar', 'Book a free consult', 'Choose a time for a free 15-minute call. There’s nothing to prepare and no commitment.'),
-    ('chat', 'Have a conversation', 'Share a little about what’s going on and ask anything you like. Together, we’ll see whether we feel like a good fit.'),
-    ('sprout', 'Book your first session', 'If it feels right, we’ll book your first session and begin, at a pace that feels right for you.'),
+    ('chat', 'Get connected', 'Share a little about what’s going on and ask anything you like. Together, we’ll see whether we feel like a good fit.'),
+    ('sprout', 'Book your session', 'If it feels right, we’ll book your first session and begin, at a pace that feels right for you.'),
 ]
 
 def steps_block():
@@ -161,14 +160,15 @@ FAQ = {
  'cost': ('How much does therapy cost?', J(p('We share fees during your free 15-minute consultation, where we can talk openly about what you’re looking for and answer any questions about cost. ' + PH('ADD: sliding-scale or reduced-fee option, if offered')))),
  'insurance': ('Is therapy covered by insurance or workplace benefits?', J(p('Many extended health plans include some coverage for psychotherapy, but every plan is different. We recommend checking with your provider whether sessions with a Registered Psychotherapist (Qualifying) are covered. ' + PH('CONFIRM: whether receipts are issued for benefits claims')))),
  'cancel': ('What is your cancellation policy?', J(p(PH('ADD CANCELLATION POLICY: how much notice is needed to cancel or reschedule, and whether a fee applies')))),
- 'length': ('How long does therapy last?', J(p('It’s different for everyone. Some people come for a handful of sessions to work on something specific; others find longer-term support helpful. We’ll check in regularly about how things are going, and you’re always in charge of the pace.'))),
+ 'length': ('How long does therapy last?', J(p('It’s different for everyone. Some people come for a handful of sessions to work on something specific; others find long-term support helpful. We’ll have regular check-ins about how things are going, and you’re always in charge of the pace.'))),
  'right': ('How do I know if therapy is right for me?', J(p('You don’t need to be in crisis, or “struggling enough,” to deserve support. If something feels heavy, confusing or stuck, that’s reason enough to reach out. The free consult is a no-pressure way to find out whether therapy, and this practice, feels right for you.'))),
- 'confidential': ('Is what I share kept confidential?', J(p('Yes. What you share in therapy is kept private and stored securely. There are a few limits set by law, for example if there is a serious risk of harm to you or someone else, or if a child may be at risk. We’ll explain these clearly before we begin, so there are no surprises.'))),
+ 'confidential': ('Is what I share kept confidential?', J(p('Yes. What you share in therapy is kept private. Your personal health information is collected, stored and protected in line with Ontario’s Personal Health Information Protection Act (PHIPA). There are a few limits set by law, for example if there is a serious risk of harm to you or someone else, or if a child may be at risk. We’ll explain these clearly before we begin, so there are no surprises.'))),
  'first': ('What is the first session like?', J(p('The first session is mostly about getting to know you: what’s going on, what you’d like to be different, and what matters to you. You can share as much or as little as feels comfortable. You don’t need the right words or a plan.'))),
  'online': ('Do you offer in-person sessions?', J(p(f'All sessions are currently online by video, so you can join from home or any private space where you feel comfortable. Online therapy is available to people living in {PROVINCES}.'))),
  'consult': ('What happens in the free consult?', J(p('It’s a relaxed 15-minute call. You can share a little about what’s bringing you to therapy, ask questions about how we work, and get a sense of whether it feels like a good fit. There’s no pressure to book anything afterward.'))),
  'language': ('Can I have sessions in Urdu or Hindi?', J(p('Yes. Sessions are available in English, Urdu and Hindi, and you’re welcome to move between languages if that feels more natural. Let us know your preference when you get in touch.'))),
- 'teens': ('Can teens book sessions?', J(p('Yes, we work with teens aged 14 and over. A parent or guardian can reach out on a teen’s behalf, or a teen can reach out themselves. ' + PH('CONFIRM: your consent process and what is shared with parents for clients aged 14–17')))),
+ 'teens': ('Can teens book sessions?', J(p('Yes, we work with teens aged 14 and over. A parent or guardian can reach out on a teen’s behalf, or a teen can reach out themselves.'))),
+ 'parents': ('How are parents or guardians involved in teen therapy?', J(p('How a parent or guardian is involved is discussed openly with both the teen and their parent or guardian at the start, and is maintained through an ongoing, consent-based approach. This is in addition to the confidentiality and security protections required under PHIPA.'))),
  'couples': ('Do both partners need to attend couples therapy?', J(p('Couples sessions usually include both partners, and sometimes there’s value in an individual session along the way. If your partner isn’t ready yet, you’re still welcome to start with individual therapy.'))),
  'fit': ('What if it doesn’t feel like a good fit?', J(p('That’s okay, and it’s worth saying out loud. A good fit matters a lot in therapy. We can talk about what isn’t working, adjust our approach, or help you find someone who may be a better match.'))),
  'emergency': ('Can I use the contact form if I’m in crisis?', J(p('Please don’t. Our inbox isn’t monitored around the clock. If you are in crisis or thinking about suicide, call or text <a href="tel:988">988</a>, call <a href="tel:911">911</a>, or go to your nearest emergency room.'))),
@@ -359,7 +359,7 @@ ABOUT = J(
     section(group(J(
         icon('heart-leaf', '', '3.25rem'),
         heading('Everyone is welcome here', 2, {'fontSize': 'x-large'}),
-        p('We welcome people of all genders, sexual orientations, cultures, faiths, abilities, body sizes and family structures. We work in English, Urdu and Hindi, and we bring curiosity and respect to the cultural, spiritual and family contexts that shape your story.'),
+        p('We welcome people of all genders, sexual orientations, cultures, faiths, abilities, body sizes and family structures. We work in English, Urdu and Hindi, and translation is provided for ' + PH('ADD LANGUAGES') + ' languages.'),
         p(PH('ADD: any specific communities you serve or would like to highlight'), {'fontSize': 'small'}),
     ), {'className': 'is-style-card-tint', 'style': {'spacing': {'padding': {'top': 'var:preset|spacing|50', 'bottom': 'var:preset|spacing|50', 'left': 'var:preset|spacing|50', 'right': 'var:preset|spacing|50'}, 'blockGap': '1rem'}}, 'layout': {'type': 'constrained', 'contentSize': '720px'}}),
         pad=('20', '70'), name='Inclusion'),
@@ -406,7 +406,7 @@ write('page-therapist', 'Page: Meet Your Therapist', THERAPIST_PAGE, cats=('own-
 
 # ---------- Services overview
 SERVICES_PAGE = J(
-    page_hero('Services', 'Online therapy for teens, adults and couples', 'Every person and every relationship is different. Here’s how we can work together, all from the comfort and privacy of your own space.', buttons(btn_book())),
+    page_hero('Services', 'Online therapy for teens, adults and couples', None, buttons(btn_book())),
     section(J(intro(None, 'Ways we can work together', None), SERVICES_GRID), name='Services'),
     section(two_col(
         stack(heading('Not sure which is right for you?', 2, {'fontSize': 'x-large'}),
@@ -417,12 +417,9 @@ SERVICES_PAGE = J(
 write('page-services', 'Page: Services', SERVICES_PAGE, cats=('own-and-become-pages',), post_types='page', block_types='core/post-content')
 
 def service_page(eyebrow_title, title, lede, who_title, who, like_title, like_paras, topics, extra_sections=(), faq_keys=()):
-    details = card(J(heading('Session details', 3, {'fontSize': 'large'}),
-                     ul(['<strong>Format:</strong> online, by video', f'<strong>Languages:</strong> English, Urdu or Hindi', '<strong>Session length:</strong> ' + PH('ADD SESSION LENGTH'), '<strong>Fees:</strong> shared in your free consult'], {'className': 'is-style-leaf-list'}),
-                     buttons(btn_book())), tint=True)
     parts = [
         page_hero(eyebrow_title, title, lede, buttons(btn_book(), btn_outline('How it works', '/how-it-works/'))),
-        section(two_col(stack(heading(who_title, 2, {'fontSize': 'x-large'}), leaf_list(who)), details, lw='58%', rw='42%', align='top'), name='Who it is for'),
+        section(group(J(heading(who_title, 2, {'fontSize': 'x-large'}), leaf_list(who)), {'style': {'spacing': {'blockGap': '1.2rem'}}, 'layout': {'type': 'constrained', 'contentSize': '760px'}}), wide=False, name='Who it is for'),
         section(group(J(heading(like_title, 2, {'fontSize': 'x-large'}), *[p(t) for t in like_paras], heading('Things we might explore', 3, {'fontSize': 'large'}), chips(topics), p('<a href="/areas-we-support/">See all areas we support →</a>', {'style': {'typography': {'fontWeight': '700'}}})),
                         {'style': {'spacing': {'blockGap': '1.2rem'}}, 'layout': {'type': 'constrained', 'contentSize': '760px'}}), bg='tint', cls='is-style-section-curve', wide=False, name='What sessions are like'),
         *extra_sections,
@@ -452,40 +449,15 @@ TEEN_EXTRA = section(two_col(
     card(J(icon('teen', '', '2.75rem'), heading('For teens', 3, {'fontSize': 'large'}),
            p('This is your space. You can talk about school, friends, family, identity, stress, or anything else on your mind, and you don’t have to have it all figured out. We’ll go at your pace, and you’ll always know what stays private and what doesn’t.'))),
     card(J(icon('family', '', '2.75rem'), heading('For parents and guardians', 3, {'fontSize': 'large'}),
-           p('It can be hard to watch your teen struggle. We work with teens directly while respecting your role in their life. We’ll talk with you at the start about how we’ll communicate and what confidentiality looks like.'),
-           p(PH('CONFIRM: your consent and confidentiality process for clients aged 14–17'), {'fontSize': 'small'})), tint=True),
+           p('It can be hard to watch your teen struggle. We work with teens directly while respecting your role in their life. How you’re involved is discussed with you and your teen at the start, and maintained through an ongoing, consent-based approach.')), tint=True),
     align='top', gap='30'), name='For teens and parents')
 write('page-teen-therapy', 'Page: Teen therapy (14+)', service_page(
     'Services · Teen therapy (14+)', 'Teen therapy (14+)',
-    'A judgment-free space for teens aged 14 and over to talk about stress, emotions, relationships and growing up, at their own pace.',
+    'A judgment-free space for teens aged 14 and over to talk about stress, emotions, relationships and growing up.',
     'Who it’s for', ['Teens 14 and over who feel anxious, low, angry or overwhelmed', 'Teens dealing with stress at school, with friends or at home', 'Teens going through change: moving, family changes, loss', 'Teens who want to understand themselves and their emotions better'],
-    'What sessions are like', ['Sessions are relaxed and conversational. We might talk, try simple tools for big feelings, or work through a situation that’s been on your mind. There’s no right or wrong way to use the time.', 'Everything is online, so you can join from a private, comfortable spot at home.'],
+    'What sessions are like', ['Sessions are relaxed and conversational. Together, we make sense of what’s on your mind and practise practical ways to handle big feelings, school, friendships and family life.'],
     ['Stress management', 'Coping skills', 'Emotion regulation', 'Anger management', 'Family dynamics &amp; relationships', 'Boundary setting', 'Grief and loss', 'Career guidance'],
-    extra_sections=(TEEN_EXTRA,), faq_keys=['teens', 'confidential', 'first']), cats=('own-and-become-pages',), post_types='page', block_types='core/post-content')
-
-ONLINE_EXTRA = section(J(
-    intro('Getting ready', 'What you’ll need', None),
-    grid([card(J(icon(i, '', '2.75rem'), heading(t, 3, {'fontSize': 'large'}), p(d))) for i, t, d in [
-        ('confidential', 'A private space', 'Somewhere you can talk freely without being overheard: a bedroom, a parked car, a quiet office. Headphones can help.'),
-        ('online', 'A device and connection', 'A phone, tablet or computer with a camera and a steady internet connection. You’ll get a secure link before your session.'),
-        ('heart-leaf', 'A few quiet minutes', 'If you can, give yourself a moment before and after to settle in and to land gently afterwards.')]], min_w='16rem', cls='ob-reveal-group'),
-    p(PH('CONFIRM: the video platform used (for example, Jane’s secure telehealth) and what clients receive before each session'), {'align': 'center', 'fontSize': 'small', 'style': {'spacing': {'margin': {'top': 'var:preset|spacing|30'}}}}),
-), name='What you need')
-ONLINE_AREAS = section(group(J(
-    icon('map', '', '3rem'),
-    heading('Where we can see clients', 2, {'fontSize': 'x-large'}),
-    p('Online sessions are available to people living in:'),
-    chips(['Ontario', 'British Columbia', 'Alberta', 'Saskatchewan', 'Manitoba', 'New Brunswick', 'Newfoundland and Labrador', 'Yukon', 'Northwest Territories', 'Nunavut']),
-    p(PH('CONFIRM: that your registration and insurance allow you to practise in each listed province and territory'), {'fontSize': 'small'})),
-    {'className': 'is-style-card', 'style': {'spacing': {'padding': {'top': 'var:preset|spacing|50', 'bottom': 'var:preset|spacing|50', 'left': 'var:preset|spacing|50', 'right': 'var:preset|spacing|50'}, 'blockGap': '1rem'}}, 'layout': {'type': 'constrained', 'contentSize': '720px'}}),
-    pad=('20', '70'), name='Service area')
-write('page-online-therapy', 'Page: Online therapy', service_page(
-    'Services · Online therapy', 'Online therapy',
-    'Every session happens by video, so you can get support from the privacy of your own space, without commuting, waiting rooms or rushing across town.',
-    'Why people choose online therapy', ['It fits around work, school, parenting and busy weeks', 'You can talk from a space where you already feel safe', 'Support is available across many provinces and territories, including smaller and remote communities', 'It’s easier to keep going during a move, a new baby or a hard season'],
-    'What it’s like', ['Online sessions work much like sessions in a room: we talk, reflect and practise tools together. Many people find it easier to open up from home.', 'At the start, we’ll confirm where you are joining from and a backup way to reach you if the connection drops.'],
-    ['Individual therapy', 'Couples therapy', 'Teen therapy (14+)', 'Sessions in English, Urdu or Hindi'],
-    extra_sections=(ONLINE_EXTRA, ONLINE_AREAS), faq_keys=['online', 'prepare', 'confidential']), cats=('own-and-become-pages',), post_types='page', block_types='core/post-content')
+    extra_sections=(TEEN_EXTRA,), faq_keys=['teens', 'parents', 'confidential', 'first']), cats=('own-and-become-pages',), post_types='page', block_types='core/post-content')
 
 # ---------- Areas we support
 AREAS_DESC = {
@@ -497,12 +469,12 @@ AREAS_DESC = {
     'Career': 'Clarity and steadiness when work feels uncertain, unfulfilling or like it’s asking too much.',
 }
 AREAS_PAGE = J(
-    page_hero('Areas we support', 'Whatever brought you here, it’s welcome here', 'These are some of the things people bring to therapy. You don’t need to fit neatly into a category. Many people come with a mix of things, or simply a feeling that something needs to change.'),
+    page_hero('Areas we support', 'Whatever brought you here, it’s welcome here', 'Here are some of the areas people often bring to therapy. You don’t have to fit into one category. Many people come with a mix of concerns, or simply a sense that something needs to change.'),
     section(grid([card(J(group(J(icon(i, '', '2.75rem'), heading(t.replace('&', '&amp;'), 2, {'fontSize': 'large'})), {'style': {'spacing': {'blockGap': '0.85rem'}}, 'layout': {'type': 'flex', 'flexWrap': 'nowrap'}}),
                              p(AREAS_DESC[t]), chips(items))) for i, t, items in AREAS], min_w='20rem', cls='ob-reveal-group'), name='Areas'),
     section(two_col(
         stack(heading('Don’t see what you’re looking for?', 2, {'fontSize': 'x-large'}),
-              p('Ayesha also often supports people with anxiety, self-doubt and feeling stuck. If you’re not sure whether we can help, reach out. If we’re not the right fit, we’ll do our best to point you toward someone who is.'),
+              p('Ayesha also often supports people with anxiety, self-doubt and feeling stuck. If you’re not sure whether we can help, reach out. If we’re not the right fit, we’ll do our best to refer you to someone who is.'),
               buttons(btn_book(), btn_outline('Contact us', '/contact/'))),
         image(A('images/become-growth.svg'), '', {'sizeSlug': 'full', 'width': '320px', 'align': 'center'}), lw='60%', rw='40%'), bg='tint', cls='is-style-section-curve', name='Not listed'),
     cta())
@@ -522,8 +494,7 @@ FEES_PAGE = J(
     ], min_w='17rem', cls='ob-reveal-group')), name='Fees overview'),
     section(group(J(
         heading('Good to know', 2, {'fontSize': 'x-large'}),
-        ul(['<strong>Session length:</strong> ' + PH('ADD SESSION LENGTH(S)'),
-            '<strong>Payment:</strong> ' + PH('ADD accepted payment methods and when payment is taken'),
+        ul(['<strong>Payment:</strong> ' + PH('ADD accepted payment methods and when payment is taken'),
             '<strong>Cancellations:</strong> ' + PH('ADD CANCELLATION POLICY: notice period and any fee'),
             '<strong>Questions to ask your insurer:</strong> Is psychotherapy covered? Does my plan cover a Registered Psychotherapist (Qualifying)? How much is covered per session and per year? Do I need a doctor’s referral?'],
            {'className': 'is-style-leaf-list'})),
@@ -541,24 +512,20 @@ HOW_PAGE = J(
         grid([card(J(heading(t, 3, {'fontSize': 'large'}), *[p(x) for x in d])) for t, d in [
             ('Before your first session', ['You’ll receive a secure link to complete intake and consent forms, and to share anything you’d like us to know ahead of time.', PH('CONFIRM: intake process and forms (for example, via Jane)')]),
             ('Your first session', ['We’ll get to know each other, talk about what brought you here, and what you’d like to be different. We’ll also go over privacy and the limits of confidentiality.']),
-            ('Ongoing sessions', ['We’ll work together on what matters most to you, using approaches that suit you. We’ll check in regularly about what’s helping and what to adjust.']),
+            ('Ongoing sessions', ['We’ll work together on what matters most to you, using approaches that suit you. We’ll have regular check-ins about what’s helping and what to adjust.']),
             ('Between sessions', ['Sometimes there’s a small practice or reflection to try during the week. It’s always an invitation, never homework you can fail.'])]], min_w='16rem', cls='ob-reveal-group'),
     ), bg='tint', cls='is-style-section-curve', name='What to expect'),
-    section(two_col(
-        stack(heading('Online sessions, made simple', 2, {'fontSize': 'x-large'}),
-              p('All sessions happen by video. You’ll need a private space, a device with a camera, and a steady internet connection. That’s it.'),
-              p('<a href="/services/online-therapy/">Learn more about online therapy →</a>', {'style': {'typography': {'fontWeight': '700'}}})),
-        stack(heading('Your privacy', 2, {'fontSize': 'x-large'}),
-              p('What you share in therapy stays private, with a few limits required by law that we’ll explain clearly before we begin. Your records are kept securely.'),
+    section(group(J(heading('Your privacy', 2, {'fontSize': 'x-large'}),
+              p('What you share in therapy stays private, with a few limits required by law that we’ll explain clearly before we begin. Your records are kept securely, in line with PHIPA.'),
               p('<a href="/privacy-policy/">Read our Privacy Policy →</a>', {'style': {'typography': {'fontWeight': '700'}}})),
-        align='top', gap='60'), name='Online and privacy'),
+              {'style': {'spacing': {'blockGap': '1rem'}}, 'layout': {'type': 'constrained', 'contentSize': '760px'}}), wide=False, name='Privacy'),
     cta())
 write('page-how-it-works', 'Page: How it works', HOW_PAGE, cats=('own-and-become-pages',), post_types='page', block_types='core/post-content')
 
 # ---------- FAQ page
 FAQ_GROUPS = [('Getting started', ['right', 'consult', 'first', 'prepare', 'fit']),
               ('Fees &amp; insurance', ['cost', 'insurance', 'cancel']),
-              ('Sessions', ['online', 'length', 'language', 'teens', 'couples']),
+              ('Sessions', ['online', 'length', 'language', 'teens', 'parents', 'couples']),
               ('Privacy &amp; safety', ['confidential', 'emergency'])]
 FAQ_PAGE = J(
     page_hero('FAQ', 'Questions people often ask', 'It’s completely normal to have questions before starting therapy. If yours isn’t answered here, you’re welcome to ask during your free consult or send us a message.'),
