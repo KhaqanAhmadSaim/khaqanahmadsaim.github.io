@@ -2,7 +2,7 @@
 
 A complete, multi-page website for the Own & Become psychotherapy practice. It's built only with free tools and **WordPress's own block editor**, so every word, image, button, menu item and footer detail can be edited in WordPress without code and without a paid page builder.
 
-**Status: not live.** Nothing here has been installed on ownandbecome.com yet.
+**Status: not live.** Installed and set up on the Hostinger staging copy, https://staging.ownandbecome.com (search engines are blocked there). The live ownandbecome.com still shows its Coming Soon page.
 
 ## What's in this folder
 
@@ -33,7 +33,9 @@ Everything else is core WordPress: the FAQ uses the built-in **Accordion** block
 6. Look through the site. Then **deactivate and delete** the setup plugin.
 7. Recommended clean-up: deactivate Elementor, WooCommerce and the Kadence theme if they're no longer used (see the suggestions below).
 
-The setup never overwrites an existing page with the same address. It only replaces WordPress's untouched draft Privacy Policy page.
+The setup never overwrites an existing page that has real content or is already published. It only fills in empty, unpublished placeholder pages with the same address (the live site has empty private Home, About, Services, Resources and Contact pages left over from its original setup) and WordPress's untouched sample Privacy Policy, keeping their IDs so links stay valid.
+
+On a site copied from the live one, also deactivate **WooCommerce**: otherwise it adds a shopping-cart and account icon to the header.
 
 ## Where to edit things
 

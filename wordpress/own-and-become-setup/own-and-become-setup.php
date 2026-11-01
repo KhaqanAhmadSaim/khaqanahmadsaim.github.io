@@ -54,7 +54,7 @@ function ob_setup_page() {
 	?>
 	<div class="wrap">
 		<h1><?php esc_html_e( 'Own & Become Setup', 'own-and-become-setup' ); ?></h1>
-		<p><?php esc_html_e( 'This builds the full Own & Become website from the theme’s patterns. It is safe to run more than once: anything it already created, or any page that already exists with the same address, is left untouched.', 'own-and-become-setup' ); ?></p>
+		<p><?php esc_html_e( 'This builds the full Own & Become website from the theme’s patterns. It is safe to run more than once: anything it already created, or any page that already exists with the same address and has real content, is left untouched. Empty, unpublished placeholder pages with the same address are filled in.', 'own-and-become-setup' ); ?></p>
 
 		<h2><?php esc_html_e( 'Before you start', 'own-and-become-setup' ); ?></h2>
 		<table class="widefat striped" style="max-width:760px">

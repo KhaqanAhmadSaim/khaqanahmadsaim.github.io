@@ -264,6 +264,27 @@ function ob_setup_page_by_path( $path ) {
 }
 
 /**
+ * Whether an existing page is an unused placeholder the setup may fill in.
+ *
+ * True only for pages that are not published and have no real content (for
+ * example the empty private pages a starter template or onboarding wizard
+ * leaves behind), or for WordPress's untouched sample Privacy Policy.
+ * Published pages and pages with real content are never taken over.
+ *
+ * @param WP_Post|null $post Page.
+ * @return bool
+ */
+function ob_setup_is_placeholder( $post ) {
+	if ( ! $post || ! in_array( $post->post_status, array( 'draft', 'private', 'pending', 'auto-draft' ), true ) ) {
+		return false;
+	}
+	if ( 'privacy-policy' === $post->post_name && false !== strpos( $post->post_content, 'privacy-policy-tutorial' ) ) {
+		return true;
+	}
+	return '' === trim( wp_strip_all_tags( strip_shortcodes( $post->post_content ) ) );
+}
+
+/**
  * Pages.
  *
  * @param array    $state State.
@@ -274,8 +295,11 @@ function ob_setup_create_pages( &$state, &$log ) {
 		$slug   = $page['slug'];
 		$parent = ! empty( $page['parent'] ) && ! empty( $state['pages'][ $page['parent'] ] ) ? (int) $state['pages'][ $page['parent'] ] : 0;
 
-		if ( ! empty( $state['pages'][ $slug ] ) && get_post( $state['pages'][ $slug ] ) ) {
-			continue;
+		if ( ! empty( $state['pages'][ $slug ] ) ) {
+			$known = get_post( $state['pages'][ $slug ] );
+			if ( $known && ! ob_setup_is_placeholder( $known ) ) {
+				continue;
+			}
 		}
 
 		$path     = ( $parent ? get_post_field( 'post_name', $parent ) . '/' : '' ) . $slug;
@@ -294,10 +318,16 @@ function ob_setup_create_pages( &$state, &$log ) {
 			'ping_status'    => 'closed',
 		);
 
+		$took_over = false;
 		if ( $existing ) {
-			// Only take over WordPress's untouched draft privacy page; never overwrite real content.
-			if ( 'privacy-policy' === $slug && 'draft' === $existing->post_status ) {
+			// Only fill in unused, unpublished placeholders; never overwrite real content.
+			if ( ob_setup_is_placeholder( $existing ) ) {
 				$args['ID'] = $existing->ID;
+				$took_over  = true;
+				// A placeholder left by a page builder would otherwise keep showing the builder's empty layout.
+				foreach ( array( '_elementor_edit_mode', '_elementor_data', '_elementor_page_settings', '_elementor_template_type' ) as $key ) {
+					delete_post_meta( $existing->ID, $key );
+				}
 			} else {
 				$state['pages'][ $slug ] = $existing->ID;
 				$log[]                   = "Page skipped (already exists, left as is): /{$path}/";
@@ -314,7 +344,7 @@ function ob_setup_create_pages( &$state, &$log ) {
 			update_post_meta( $id, '_wp_page_template', $page['template'] );
 		}
 		$state['pages'][ $slug ] = $id;
-		$log[]                   = "Page created: {$page['title']} (/{$path}/)";
+		$log[]                   = ( $took_over ? 'Page filled in (was an empty, unpublished placeholder)' : 'Page created' ) . ": {$page['title']} (/{$path}/)";
 	}
 }
 
