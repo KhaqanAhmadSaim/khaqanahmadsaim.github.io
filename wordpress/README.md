@@ -11,7 +11,7 @@ A complete, multi-page website for the Own & Become psychotherapy practice. It's
 | `own-and-become/` | The theme: a child theme of Twenty Twenty-Five (colours, fonts, header, footer, mobile menu, page layouts, ~30 ready-made sections). |
 | `own-and-become-setup/` | A **one-time** setup plugin that builds every page, the menu, the contact form, 3 placeholder posts and the settings. Run it once, then delete it. Nothing depends on it afterwards. |
 | `dist/` | The two folders above as `.zip` files, ready to upload in WordPress. |
-| `tools/` | Optional. Scripts used to generate the patterns, icons and illustrations. Not needed to run or edit the site. |
+| `tools/` | Optional, historical. Scripts first used to generate the patterns, icons and illustrations. The patterns have since been edited directly (copy changes, photos), so `own-and-become/patterns/` is now the source of truth: don't re-run `tools/patterns.py` over it. |
 
 ## Plugins used (all free)
 
@@ -52,6 +52,22 @@ On a site copied from the live one, also deactivate **WooCommerce**: otherwise i
 | Blog posts and categories | **Posts** |
 
 **Swapping in Jane later:** every "Book a Free Consult" button points to one page, `/book/`. When the Jane booking link is ready, edit just that page (replace the "Online booking" box with a button to Jane). Nothing else needs to change. Also update the **Client Login** link in the header and the mobile menu.
+
+## Photos
+
+The section photos are royalty-free from [Pexels](https://www.pexels.com/license/) (free for commercial use, no credit required), cropped and stored in `own-and-become/assets/images/photos/`. On the site they live in the Media Library, so any of them can be swapped in the page editor.
+
+| File | Where | Pexels photo |
+|---|---|---|
+| `hero-armchair.jpg` | Home, top (arch frame) | [40059237](https://www.pexels.com/photo/40059237/) |
+| `not-alone-mug.jpg` | Home, “This isn’t how you thought life would feel” | [15317909](https://www.pexels.com/photo/15317909/) |
+| `own-soil.jpg` | Home, “Own” card | [31374933](https://www.pexels.com/photo/31374933/) |
+| `become-fern.jpg` | Home, “Become” card | [13079522](https://www.pexels.com/photo/13079522/) |
+| `together-chairs.jpg` | About | [17066896](https://www.pexels.com/photo/17066896/) |
+| `online-session.jpg` | Services, “Not sure” section | [8473914](https://www.pexels.com/photo/8473914/) |
+| `areas-fern.jpg` | Areas We Support, “Not listed” section | [18189850](https://www.pexels.com/photo/18189850/) |
+
+The therapist portrait is still a placeholder: replace it with a real photo.
 
 ## Placeholders
 

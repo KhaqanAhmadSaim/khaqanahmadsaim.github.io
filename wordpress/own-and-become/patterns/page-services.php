@@ -121,8 +121,8 @@
 <!-- /wp:column -->
 
 <!-- wp:column {"width":"45%","verticalAlignment":"center"} -->
-<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:45%"><!-- wp:image {"sizeSlug":"full"} -->
-<figure class="wp-block-image size-full"><img src="<?php echo own_and_become_asset( 'images/path-sprout.svg' ); ?>" alt=""/></figure>
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:45%"><!-- wp:image {"sizeSlug":"full","linkDestination":"none","className":"is-style-soft"} -->
+<figure class="wp-block-image size-full is-style-soft"><img src="<?php echo own_and_become_asset( 'images/photos/online-session.jpg' ); ?>" alt="A laptop, a cup of tea and a notebook set out for an online session."/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>

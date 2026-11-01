@@ -64,8 +64,8 @@
 <!-- /wp:column -->
 
 <!-- wp:column {"width":"45%","verticalAlignment":"center"} -->
-<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:45%"><!-- wp:image {"sizeSlug":"full","className":"ob-reveal"} -->
-<figure class="wp-block-image size-full ob-reveal"><img src="<?php echo own_and_become_asset( 'images/path-sprout.svg' ); ?>" alt="Illustration of a line that loops back on itself, keeps moving forward, and grows into a small sprout."/></figure>
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:45%"><!-- wp:image {"sizeSlug":"full","linkDestination":"none","className":"is-style-soft ob-reveal"} -->
+<figure class="wp-block-image size-full is-style-soft ob-reveal"><img src="<?php echo own_and_become_asset( 'images/photos/not-alone-mug.jpg' ); ?>" alt="Hands holding a warm mug beside a misty window."/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"align":"center","fontFamily":"heading","fontSize":"large","textColor":"primary"} -->

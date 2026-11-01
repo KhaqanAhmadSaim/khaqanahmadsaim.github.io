@@ -31,8 +31,8 @@
 <div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70)"><!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
 <div class="wp-block-group alignwide"><!-- wp:columns {"verticalAlignment":"center","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|60","top":"var:preset|spacing|50"}}}} -->
 <div class="wp-block-columns are-vertically-aligned-center"><!-- wp:column {"width":"45%","verticalAlignment":"center"} -->
-<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:45%"><!-- wp:image {"sizeSlug":"full","className":"ob-reveal"} -->
-<figure class="wp-block-image size-full ob-reveal"><img src="<?php echo own_and_become_asset( 'images/together.svg' ); ?>" alt="Illustration of two people sitting together on a bench beneath a tree, with two small copper leaves between them."/></figure>
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:45%"><!-- wp:image {"sizeSlug":"full","linkDestination":"none","className":"is-style-soft ob-reveal"} -->
+<figure class="wp-block-image size-full is-style-soft ob-reveal"><img src="<?php echo own_and_become_asset( 'images/photos/together-chairs.jpg' ); ?>" alt="Two chairs facing each other across a small round table in a warm, quiet room."/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 

@@ -42,8 +42,8 @@
 <!-- /wp:column -->
 
 <!-- wp:column {"width":"44%","verticalAlignment":"center"} -->
-<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:44%"><!-- wp:image {"sizeSlug":"full","className":"ob-reveal"} -->
-<figure class="wp-block-image size-full ob-reveal"><img src="<?php echo own_and_become_asset( 'images/hero-arch.svg' ); ?>" alt="Illustration of two people walking side by side along a winding path through soft green hills, beside a tree that bends but keeps growing."/></figure>
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:44%"><!-- wp:image {"sizeSlug":"full","linkDestination":"none","className":"is-style-arch ob-reveal"} -->
+<figure class="wp-block-image size-full is-style-arch ob-reveal"><img src="<?php echo own_and_become_asset( 'images/photos/hero-armchair.jpg' ); ?>" alt="A quiet armchair in a softly lit corner, framed by linen curtains."/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>

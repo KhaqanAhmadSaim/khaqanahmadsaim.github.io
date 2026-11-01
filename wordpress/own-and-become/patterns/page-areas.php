@@ -247,8 +247,8 @@
 <!-- /wp:column -->
 
 <!-- wp:column {"width":"40%","verticalAlignment":"center"} -->
-<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:40%"><!-- wp:image {"sizeSlug":"full","width":"320px","align":"center"} -->
-<figure class="wp-block-image aligncenter size-full is-resized"><img src="<?php echo own_and_become_asset( 'images/become-growth.svg' ); ?>" alt="" style="width:320px;height:auto"/></figure>
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:40%"><!-- wp:image {"sizeSlug":"full","linkDestination":"none","className":"is-style-soft"} -->
+<figure class="wp-block-image size-full is-style-soft"><img src="<?php echo own_and_become_asset( 'images/photos/areas-fern.jpg' ); ?>" alt="A young fern rising above the undergrowth."/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>

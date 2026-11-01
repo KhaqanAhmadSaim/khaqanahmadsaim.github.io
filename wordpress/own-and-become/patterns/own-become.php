@@ -26,8 +26,8 @@
 
 <!-- wp:columns {"className":"ob-two-part","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|30","top":"var:preset|spacing|30"}}}} -->
 <div class="wp-block-columns ob-two-part"><!-- wp:column {"className":"is-style-card","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"}}}} -->
-<div class="wp-block-column is-style-card" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)"><!-- wp:image {"width":"220px","sizeSlug":"full","align":"center"} -->
-<figure class="wp-block-image aligncenter size-full is-resized"><img src="<?php echo own_and_become_asset( 'images/own-roots.svg' ); ?>" alt="Illustration of a small plant with strong roots." style="width:220px;height:auto"/></figure>
+<div class="wp-block-column is-style-card" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)"><!-- wp:image {"sizeSlug":"full","linkDestination":"none","className":"is-style-soft"} -->
+<figure class="wp-block-image size-full is-style-soft"><img src="<?php echo own_and_become_asset( 'images/photos/own-soil.jpg' ); ?>" alt="Two hands cupping rich, dark soil."/></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"textAlign":"center","level":3} -->
@@ -40,8 +40,8 @@
 <!-- /wp:column -->
 
 <!-- wp:column {"className":"is-style-card-tint","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"}}}} -->
-<div class="wp-block-column is-style-card-tint" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)"><!-- wp:image {"width":"220px","sizeSlug":"full","align":"center"} -->
-<figure class="wp-block-image aligncenter size-full is-resized"><img src="<?php echo own_and_become_asset( 'images/become-growth.svg' ); ?>" alt="Illustration of a young plant growing new leaves." style="width:220px;height:auto"/></figure>
+<div class="wp-block-column is-style-card-tint" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)"><!-- wp:image {"sizeSlug":"full","linkDestination":"none","className":"is-style-soft"} -->
+<figure class="wp-block-image size-full is-style-soft"><img src="<?php echo own_and_become_asset( 'images/photos/become-fern.jpg' ); ?>" alt="A fern frond slowly unfurling."/></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"textAlign":"center","level":3} -->
