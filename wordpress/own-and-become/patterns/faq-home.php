@@ -35,18 +35,6 @@
 <div class="wp-block-column" style="flex-basis:64%"><!-- wp:accordion -->
 <div role="group" class="wp-block-accordion"><!-- wp:accordion-item -->
 <div class="wp-block-accordion-item"><!-- wp:accordion-heading -->
-<h3 class="wp-block-accordion-heading has-icon has-icon-right"><button type="button" class="wp-block-accordion-heading__toggle"><span class="wp-block-accordion-heading__toggle-title">How much does therapy cost?</span><span class="wp-block-accordion-heading__toggle-icon" aria-hidden="true">+</span></button></h3>
-<!-- /wp:accordion-heading -->
-
-<!-- wp:accordion-panel -->
-<div role="region" class="wp-block-accordion-panel"><!-- wp:paragraph -->
-<p>We share fees during your free 15-minute consultation, where we can talk openly about what you’re looking for and answer any questions about cost. <mark class="ob-placeholder">[ADD: sliding-scale or reduced-fee option, if offered]</mark></p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:accordion-panel --></div>
-<!-- /wp:accordion-item -->
-
-<!-- wp:accordion-item -->
-<div class="wp-block-accordion-item"><!-- wp:accordion-heading -->
 <h3 class="wp-block-accordion-heading has-icon has-icon-right"><button type="button" class="wp-block-accordion-heading__toggle"><span class="wp-block-accordion-heading__toggle-title">Is therapy covered by insurance or workplace benefits?</span><span class="wp-block-accordion-heading__toggle-icon" aria-hidden="true">+</span></button></h3>
 <!-- /wp:accordion-heading -->
 

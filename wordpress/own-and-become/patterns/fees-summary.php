@@ -25,7 +25,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>We’ll walk you through fees, session options and questions about benefits during your free consultation, so you have the full picture before you decide anything. Many extended health plans include psychotherapy; we recommend checking your coverage.</p>
+<p>We’ll walk you through fees, session options and questions about benefits during your free consultation, so you have the full picture and can make an informed decision. Many extended health plans include psychotherapy; we recommend checking your coverage.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"fontSize":"small"} -->

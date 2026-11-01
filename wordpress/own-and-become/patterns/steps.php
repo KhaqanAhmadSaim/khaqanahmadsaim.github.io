@@ -37,7 +37,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center"} -->
-<p class="has-text-align-center">Choose a time for a free 15-minute call. There’s nothing to prepare and no commitment.</p>
+<p class="has-text-align-center">Choose a time for a free 15-minute call. There’s nothing to prepare. Just bring your commitment to taking this first step.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 

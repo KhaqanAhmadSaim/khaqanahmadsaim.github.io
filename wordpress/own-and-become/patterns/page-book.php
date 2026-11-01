@@ -50,7 +50,7 @@
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li>No commitment: you decide afterwards, in your own time</li>
+<li>A real commitment to yourself: the first step toward the change you’re looking for</li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->
 

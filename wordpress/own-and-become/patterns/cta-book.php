@@ -20,7 +20,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center","fontSize":"large"} -->
-<p class="has-text-align-center has-large-font-size">A free 15-minute consult is a gentle first step. No pressure and no commitment, just a conversation about what you’re looking for.</p>
+<p class="has-text-align-center has-large-font-size">A free 15-minute consult is your first committed step: a focused conversation about what you’re looking for and how we’ll work toward it together.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->

@@ -36,7 +36,7 @@
 <!-- /wp:buttons -->
 
 <!-- wp:paragraph {"textColor":"muted","fontSize":"small"} -->
-<p class="has-muted-color has-text-color has-small-font-size">Free 15-minute consult · No pressure, no commitment</p>
+<p class="has-muted-color has-text-color has-small-font-size">Free 15-minute consult · Your first committed step</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column -->

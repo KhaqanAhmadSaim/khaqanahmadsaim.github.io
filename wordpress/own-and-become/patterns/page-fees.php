@@ -46,7 +46,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>During your free 15-minute consultation, we’ll go over session fees and options and answer any questions, before you commit to anything.</p>
+<p>During your free 15-minute consultation, we’ll go over session fees and options and answer any questions, so you can make an informed decision.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -98,6 +98,10 @@
 
 <!-- wp:list-item -->
 <li><strong>Cancellations:</strong> <mark class="ob-placeholder">[ADD CANCELLATION POLICY: notice period and any fee]</mark></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Translation:</strong> Sessions in English, Urdu and Hindi are at the standard fee. Translation for other languages is available at an additional cost, which we’ll confirm with you during your free consult.</li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
