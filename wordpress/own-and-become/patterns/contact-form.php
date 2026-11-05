@@ -28,7 +28,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"fontSize":"small"} -->
-<p class="has-small-font-size"><a href="tel:+10000000000">[ADD PHONE]</a></p>
+<p class="has-small-font-size"><a href="tel:+17057702733">705-770-2733</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->

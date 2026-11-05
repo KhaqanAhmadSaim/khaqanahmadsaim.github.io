@@ -64,7 +64,7 @@
 
 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"},"style":{"spacing":{"margin":{"top":"var:preset|spacing|50"}}}} -->
 <div class="wp-block-buttons" style="margin-top:var(--wp--preset--spacing--50)"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/book/">Book a Free Consult</a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://ownandbecome.janeapp.com">Book a Free Consult</a></div>
 <!-- /wp:button -->
 
 <!-- wp:button {"className":"is-style-outline"} -->

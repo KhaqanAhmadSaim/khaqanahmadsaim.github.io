@@ -76,13 +76,6 @@ function ob_setup_pages() {
 			'seo'     => array( 'Areas We Support: Stress, Grief, Relationships & More | Own & Become', 'Support for stress, emotions, relationships and family, pregnancy and postpartum, infertility, miscarriage, grief, life transitions and career changes.' ),
 		),
 		array(
-			'slug'    => 'fees',
-			'title'   => 'Fees & Insurance',
-			'pattern' => 'page-fees',
-			'order'   => 50,
-			'seo'     => array( 'Fees & Insurance | Own & Become', 'How fees, insurance and benefits work at Own & Become. We talk through costs openly in your free 15-minute consultation.' ),
-		),
-		array(
 			'slug'    => 'how-it-works',
 			'title'   => 'How It Works',
 			'pattern' => 'page-how-it-works',
@@ -165,7 +158,6 @@ function ob_setup_menu_items() {
 			),
 		),
 		array( 'label' => 'Therapist', 'page' => 'therapist' ),
-		array( 'label' => 'Fees', 'page' => 'fees' ),
 		array( 'label' => 'FAQ', 'page' => 'faq' ),
 		array( 'label' => 'Resources', 'page' => 'resources' ),
 		array( 'label' => 'Contact', 'page' => 'contact' ),

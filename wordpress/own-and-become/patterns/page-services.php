@@ -22,7 +22,7 @@
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/book/">Book a Free Consult</a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://ownandbecome.janeapp.com">Book a Free Consult</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
@@ -108,7 +108,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"fontWeight":"700"}}} -->
-<p style="font-weight:700"><a href="/book/">Ask about the sliding scale →</a></p>
+<p style="font-weight:700"><a href="https://ownandbecome.janeapp.com">Ask about the sliding scale →</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
@@ -130,7 +130,7 @@
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/book/">Book a Free Consult</a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://ownandbecome.janeapp.com">Book a Free Consult</a></div>
 <!-- /wp:button -->
 
 <!-- wp:button {"className":"is-style-outline"} -->

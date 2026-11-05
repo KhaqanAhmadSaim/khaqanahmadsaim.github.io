@@ -60,7 +60,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>If you have difficulty using any part of this website, or would like information in another format, please contact us at <a href="mailto:info@ownandbecome.com">info@ownandbecome.com</a> or <a href="tel:+10000000000">[ADD PHONE]</a>. We’ll do our best to help, and we welcome your feedback.</p>
+<p>If you have difficulty using any part of this website, or would like information in another format, please contact us at <a href="mailto:info@ownandbecome.com">info@ownandbecome.com</a> or <a href="tel:+17057702733">705-770-2733</a>. We’ll do our best to help, and we welcome your feedback.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"fontSize":"small"} -->

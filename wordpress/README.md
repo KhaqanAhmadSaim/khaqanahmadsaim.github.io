@@ -51,7 +51,11 @@ On a site copied from the live one, also deactivate **WooCommerce**: otherwise i
 | SEO title and description of a page | The page's editor, in the *SEO Framework* box at the bottom |
 | Blog posts and categories | **Posts** |
 
-**Swapping in Jane later:** every "Book a Free Consult" button points to one page, `/book/`. When the Jane booking link is ready, edit just that page (replace the "Online booking" box with a button to Jane). Nothing else needs to change. Also update the **Client Login** link in the header and the mobile menu.
+**Booking (Jane):** every "Book a Free Consult" button (header, mobile menu, home, service pages, footer and the shared "Ready when you are" box) links straight to the Jane booking page, https://ownandbecome.janeapp.com. The `/book/` page stays as a short "what to expect" page with a **Book on Jane** button and the contact form for people who prefer to send a message. If the Jane address ever changes, search the editor for `janeapp.com`. There's no Client Login link: clients sign in through Jane.
+
+**Fees:** there is no separate Fees page. Fees, the sliding scale, insurance, translation cost, payment and cancellation are answered in the FAQ's **Fees & insurance** section (`/faq/#fees`), and old `/fees/` links redirect there. The sliding scale is also on the Services page.
+
+**Contact details:** phone 705-770-2733 and info@ownandbecome.com appear in the header, mobile menu, footer and contact section.
 
 ## Photos
 

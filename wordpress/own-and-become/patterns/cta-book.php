@@ -25,7 +25,7 @@
 
 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
 <div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"base","textColor":"primary-deep","style":{"border":{"color":"#FBFAF6"}}} -->
-<div class="wp-block-button"><a class="wp-block-button__link has-primary-deep-color has-text-color has-base-background-color has-background has-border-color wp-element-button" href="/book/" style="border-color:#FBFAF6">Book a Free Consult</a></div>
+<div class="wp-block-button"><a class="wp-block-button__link has-primary-deep-color has-text-color has-base-background-color has-background has-border-color wp-element-button" href="https://ownandbecome.janeapp.com" style="border-color:#FBFAF6">Book a Free Consult</a></div>
 <!-- /wp:button -->
 
 <!-- wp:button {"className":"is-style-outline","textColor":"base","style":{"border":{"color":"#FBFAF6"}}} -->

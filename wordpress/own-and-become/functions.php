@@ -153,3 +153,19 @@ function own_and_become_page_has_form() {
 }
 add_filter( 'wpcf7_load_js', 'own_and_become_page_has_form' );
 add_filter( 'wpcf7_load_css', 'own_and_become_page_has_form' );
+
+/**
+ * The Fees page was folded into the FAQ: send old /fees/ links to the
+ * FAQ's "Fees & insurance" section (only when no page exists there).
+ */
+function own_and_become_redirect_fees() {
+	if ( ! is_404() ) {
+		return;
+	}
+	$path = trim( (string) wp_parse_url( $_SERVER['REQUEST_URI'] ?? '', PHP_URL_PATH ), '/' ); // phpcs:ignore WordPress.Security.ValidatedSanitizedInput
+	if ( in_array( $path, array( 'fees', 'fees-insurance' ), true ) ) {
+		wp_safe_redirect( home_url( '/faq/#fees' ), 301 );
+		exit;
+	}
+}
+add_action( 'template_redirect', 'own_and_become_redirect_fees' );

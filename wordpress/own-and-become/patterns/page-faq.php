@@ -96,11 +96,35 @@
 <!-- /wp:accordion -->
 
 <!-- wp:heading {"fontSize":"x-large","style":{"spacing":{"margin":{"top":"var:preset|spacing|50"}}}} -->
-<h2 class="wp-block-heading has-x-large-font-size" style="margin-top:var(--wp--preset--spacing--50)">Fees &amp; insurance</h2>
+<h2 id="fees" class="wp-block-heading has-x-large-font-size" style="margin-top:var(--wp--preset--spacing--50)">Fees &amp; insurance</h2>
 <!-- /wp:heading -->
 
 <!-- wp:accordion -->
 <div role="group" class="wp-block-accordion"><!-- wp:accordion-item -->
+<div class="wp-block-accordion-item"><!-- wp:accordion-heading -->
+<h3 class="wp-block-accordion-heading has-icon has-icon-right"><button type="button" class="wp-block-accordion-heading__toggle"><span class="wp-block-accordion-heading__toggle-title">How do fees work?</span><span class="wp-block-accordion-heading__toggle-icon" aria-hidden="true">+</span></button></h3>
+<!-- /wp:accordion-heading -->
+
+<!-- wp:accordion-panel -->
+<div role="region" class="wp-block-accordion-panel"><!-- wp:paragraph -->
+<p>We go over session fees and options during your free 15-minute consult, and answer any questions about cost, so you can make an informed decision before booking.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:accordion-panel --></div>
+<!-- /wp:accordion-item -->
+
+<!-- wp:accordion-item -->
+<div class="wp-block-accordion-item"><!-- wp:accordion-heading -->
+<h3 class="wp-block-accordion-heading has-icon has-icon-right"><button type="button" class="wp-block-accordion-heading__toggle"><span class="wp-block-accordion-heading__toggle-title">Do you offer a sliding scale?</span><span class="wp-block-accordion-heading__toggle-icon" aria-hidden="true">+</span></button></h3>
+<!-- /wp:accordion-heading -->
+
+<!-- wp:accordion-panel -->
+<div role="region" class="wp-block-accordion-panel"><!-- wp:paragraph -->
+<p>Yes. We offer a sliding scale to make therapy accessible for those in need. Ask about it during your free consult, and we’ll work out a fee that fits your situation.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:accordion-panel --></div>
+<!-- /wp:accordion-item -->
+
+<!-- wp:accordion-item -->
 <div class="wp-block-accordion-item"><!-- wp:accordion-heading -->
 <h3 class="wp-block-accordion-heading has-icon has-icon-right"><button type="button" class="wp-block-accordion-heading__toggle"><span class="wp-block-accordion-heading__toggle-title">Is therapy covered by insurance or workplace benefits?</span><span class="wp-block-accordion-heading__toggle-icon" aria-hidden="true">+</span></button></h3>
 <!-- /wp:accordion-heading -->
@@ -108,6 +132,30 @@
 <!-- wp:accordion-panel -->
 <div role="region" class="wp-block-accordion-panel"><!-- wp:paragraph -->
 <p>Many extended health plans include some coverage for psychotherapy, but every plan is different. We recommend checking with your provider whether sessions with a Registered Psychotherapist (Qualifying) are covered. <mark class="ob-placeholder">[CONFIRM: whether receipts are issued for benefits claims]</mark></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:accordion-panel --></div>
+<!-- /wp:accordion-item -->
+
+<!-- wp:accordion-item -->
+<div class="wp-block-accordion-item"><!-- wp:accordion-heading -->
+<h3 class="wp-block-accordion-heading has-icon has-icon-right"><button type="button" class="wp-block-accordion-heading__toggle"><span class="wp-block-accordion-heading__toggle-title">Is there an extra cost for translation?</span><span class="wp-block-accordion-heading__toggle-icon" aria-hidden="true">+</span></button></h3>
+<!-- /wp:accordion-heading -->
+
+<!-- wp:accordion-panel -->
+<div role="region" class="wp-block-accordion-panel"><!-- wp:paragraph -->
+<p>Sessions in English and Urdu are at the standard fee. Translation for other languages is available at an additional cost, which we’ll confirm with you during your free consult.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:accordion-panel --></div>
+<!-- /wp:accordion-item -->
+
+<!-- wp:accordion-item -->
+<div class="wp-block-accordion-item"><!-- wp:accordion-heading -->
+<h3 class="wp-block-accordion-heading has-icon has-icon-right"><button type="button" class="wp-block-accordion-heading__toggle"><span class="wp-block-accordion-heading__toggle-title">How do I pay?</span><span class="wp-block-accordion-heading__toggle-icon" aria-hidden="true">+</span></button></h3>
+<!-- /wp:accordion-heading -->
+
+<!-- wp:accordion-panel -->
+<div role="region" class="wp-block-accordion-panel"><!-- wp:paragraph -->
+<p>Payment is handled securely through our booking system, Jane. <mark class="ob-placeholder">[ADD accepted payment methods and when payment is taken]</mark></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:accordion-panel --></div>
 <!-- /wp:accordion-item -->

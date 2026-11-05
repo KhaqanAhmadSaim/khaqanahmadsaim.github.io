@@ -56,16 +56,18 @@
 
 <!-- wp:group {"className":"is-style-card-tint","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|40","right":"var:preset|spacing|40"},"blockGap":"0.75rem"}},"layout":{"type":"default"}} -->
 <div class="wp-block-group is-style-card-tint" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)"><!-- wp:heading {"fontSize":"large","level":3} -->
-<h3 class="wp-block-heading has-large-font-size">Online booking</h3>
+<h3 class="wp-block-heading has-large-font-size">Book online</h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Online booking through Jane is coming soon. For now, send us a message with a few times that suit you and we’ll reply within 1–2 business days to find a time.</p>
+<p>Choose a time for your free 15-minute consult in our secure booking system, Jane. You’ll get a confirmation by email.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"fontSize":"small"} -->
-<p class="has-small-font-size"><mark class="ob-placeholder">[WHEN READY: replace this box with a “Book on Jane” button linking to your Jane booking page]</mark></p>
-<!-- /wp:paragraph --></div>
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://ownandbecome.janeapp.com">Book on Jane</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
 <!-- /wp:group -->
 
 <!-- wp:pattern {"slug":"own-and-become/crisis-notice"} /--></div>
@@ -75,7 +77,7 @@
 <!-- wp:column {"width":"58%","verticalAlignment":"top"} -->
 <div class="wp-block-column is-vertically-aligned-top" style="flex-basis:58%"><!-- wp:group {"className":"is-style-card","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|40","right":"var:preset|spacing|40"},"blockGap":"0.85rem"},"dimensions":{"minHeight":"100%"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"}} -->
 <div class="wp-block-group is-style-card" style="min-height:100%;padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)"><!-- wp:heading {"fontSize":"x-large"} -->
-<h2 class="wp-block-heading has-x-large-font-size">Request your free consult</h2>
+<h2 class="wp-block-heading has-x-large-font-size">Prefer to send a message?</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"className":"ob-hint","fontSize":"small","textColor":"muted"} -->

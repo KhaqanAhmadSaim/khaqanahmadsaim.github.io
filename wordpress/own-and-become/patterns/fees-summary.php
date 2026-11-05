@@ -37,7 +37,7 @@
 <!-- wp:column {"width":"16rem","verticalAlignment":"center"} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:16rem"><!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/fees/">Fees &amp; insurance details</a></div>
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="/faq/#fees">Fees &amp; insurance questions</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column --></div>
