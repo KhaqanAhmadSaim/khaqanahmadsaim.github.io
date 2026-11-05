@@ -37,7 +37,7 @@
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
-<p>English, Urdu &amp; Hindi</p>
+<p>English &amp; Urdu</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 

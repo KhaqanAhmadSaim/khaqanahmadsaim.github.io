@@ -170,7 +170,7 @@ mark.ob-placeholder,
 .ob-topbar .ob-icon-phone { --ob-icon: url("assets/icons/ui-phone.svg"); }
 .ob-topbar .ob-icon-pin { --ob-icon: url("assets/icons/ui-pin.svg"); }
 .ob-topbar .ob-icon-lang { --ob-icon: url("assets/icons/ui-chat.svg"); }
-.ob-topbar .ob-icon-login { --ob-icon: url("assets/icons/ui-lock.svg"); }
+.ob-topbar .ob-icon-mail { --ob-icon: url("assets/icons/ui-mail.svg"); }
 
 @media (max-width: 781px) {
 	.wp-site-blocks > header.wp-block-template-part { --ob-topbar-h: 0px; }

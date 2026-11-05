@@ -84,5 +84,5 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Questions about these terms? Email <mark class="ob-placeholder">[ADD EMAIL]</mark>.</p>
+<p>Questions about these terms? Email <a href="mailto:info@ownandbecome.com">info@ownandbecome.com</a>.</p>
 <!-- /wp:paragraph -->

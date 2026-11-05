@@ -101,7 +101,7 @@
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Translation:</strong> Sessions in English, Urdu and Hindi are at the standard fee. Translation for other languages is available at an additional cost, which we’ll confirm with you during your free consult.</li>
+<li><strong>Translation:</strong> Sessions in English and Urdu are at the standard fee. Translation for other languages is available at an additional cost, which we’ll confirm with you during your free consult.</li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
@@ -125,7 +125,7 @@
 
 <!-- wp:accordion-panel -->
 <div role="region" class="wp-block-accordion-panel"><!-- wp:paragraph -->
-<p>We share fees during your free 15-minute consultation, where we can talk openly about what you’re looking for and answer any questions about cost. <mark class="ob-placeholder">[ADD: sliding-scale or reduced-fee option, if offered]</mark></p>
+<p>We share fees during your free 15-minute consultation, where we can talk openly about what you’re looking for and answer any questions about cost. We also offer a sliding scale to make therapy accessible for those in need.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:accordion-panel --></div>
 <!-- /wp:accordion-item -->

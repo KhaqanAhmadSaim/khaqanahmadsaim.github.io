@@ -44,7 +44,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"fontSize":"small"} -->
-<p class="has-small-font-size"><a href="#add-email">[ADD EMAIL]</a></p>
+<p class="has-small-font-size"><a href="mailto:info@ownandbecome.com">info@ownandbecome.com</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
@@ -92,7 +92,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"fontSize":"small"} -->
-<p class="has-small-font-size">English, Urdu and Hindi</p>
+<p class="has-small-font-size">English and Urdu</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->

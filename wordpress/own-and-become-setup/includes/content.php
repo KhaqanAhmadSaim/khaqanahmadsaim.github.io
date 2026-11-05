@@ -21,7 +21,7 @@ function ob_setup_pages() {
 			'title'   => 'Home',
 			'pattern' => 'page-home',
 			'order'   => 0,
-			'seo'     => array( 'Online Therapy in Ontario & Across Canada | Own & Become', 'Warm, practical online therapy for teens (14+), adults and couples in Ontario and across Canada, in English, Urdu and Hindi. Book a free 15-minute consult.' ),
+			'seo'     => array( 'Online Therapy in Ontario & Across Canada | Own & Become', 'Warm, practical online therapy for teens (14+), adults and couples in Ontario and across Canada, in English and Urdu. Book a free 15-minute consult.' ),
 		),
 		array(
 			'slug'    => 'about',
@@ -35,14 +35,14 @@ function ob_setup_pages() {
 			'title'   => 'Meet Your Therapist',
 			'pattern' => 'page-therapist',
 			'order'   => 20,
-			'seo'     => array( 'Ayesha Munawar, Registered Psychotherapist (Qualifying) | Own & Become', 'Meet Ayesha Munawar, RP (Qualifying), MACP. Warm, practical online therapy for anxiety, grief, relationships, self-doubt, pregnancy and postpartum. English, Urdu & Hindi.' ),
+			'seo'     => array( 'Ayesha Munawar, Registered Psychotherapist (Qualifying) | Own & Become', 'Meet Ayesha Munawar, RP (Qualifying), MACP. Warm, practical online therapy for anxiety, grief, relationships, self-doubt, pregnancy and postpartum. English & Urdu.' ),
 		),
 		array(
 			'slug'    => 'services',
 			'title'   => 'Services',
 			'pattern' => 'page-services',
 			'order'   => 30,
-			'seo'     => array( 'Therapy Services: Individual, Couples & Teen | Own & Become', 'Online individual, couples and teen (14+) therapy for people in Ontario and across Canada. Sessions in English, Urdu and Hindi. Free 15-minute consult.' ),
+			'seo'     => array( 'Therapy Services: Individual, Couples & Teen | Own & Become', 'Online individual, couples and teen (14+) therapy for people in Ontario and across Canada. Sessions in English and Urdu. Free 15-minute consult.' ),
 		),
 		array(
 			'slug'    => 'individual-therapy',
@@ -114,7 +114,7 @@ function ob_setup_pages() {
 			'title'   => 'Book a Free Consult',
 			'pattern' => 'page-book',
 			'order'   => 95,
-			'seo'     => array( 'Book a Free 15-Minute Consult | Own & Become', 'Book a free, no-pressure 15-minute consult to ask questions and see whether we’re a good fit. Online therapy in English, Urdu and Hindi.' ),
+			'seo'     => array( 'Book a Free 15-Minute Consult | Own & Become', 'Book a free, no-pressure 15-minute consult to ask questions and see whether we’re a good fit. Online therapy in English and Urdu.' ),
 		),
 		array(
 			'slug'     => 'privacy-policy',
@@ -307,7 +307,7 @@ function ob_setup_form_markup() {
 </fieldset>
 <fieldset>
 <legend class="ob-legend">Preferred language</legend>
-[radio language use_label_element default:1 "English" "Urdu" "Hindi" "No preference"]
+[radio language use_label_element default:1 "English" "Urdu" "No preference"]
 </fieldset>
 <fieldset>
 <legend class="ob-legend">Times that usually suit you <span class="ob-hint">Choose any that apply</span></legend>

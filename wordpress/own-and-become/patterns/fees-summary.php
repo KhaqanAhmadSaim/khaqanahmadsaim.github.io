@@ -29,7 +29,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"fontSize":"small"} -->
-<p class="has-small-font-size"><mark class="ob-placeholder">[ADD: sliding-scale or reduced-fee option, if offered]</mark> <mark class="ob-placeholder">[CONFIRM: receipts for insurance claims]</mark></p>
+<p class="has-small-font-size">We also offer a sliding scale to make therapy accessible for those in need. <mark class="ob-placeholder">[CONFIRM: receipts for insurance claims]</mark></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column -->

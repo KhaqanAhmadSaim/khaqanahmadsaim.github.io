@@ -108,7 +108,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>You may ask to access or correct the personal information we hold about you, and ask questions or raise concerns about how it is handled. Contact our privacy officer at <mark class="ob-placeholder">[ADD EMAIL]</mark>. You also have the right to complain to the Office of the Privacy Commissioner of Canada or the Information and Privacy Commissioner of Ontario.</p>
+<p>You may ask to access or correct the personal information we hold about you, and ask questions or raise concerns about how it is handled. Contact our privacy officer at <a href="mailto:info@ownandbecome.com">info@ownandbecome.com</a>. You also have the right to complain to the Office of the Privacy Commissioner of Canada or the Information and Privacy Commissioner of Ontario.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"fontSize":"x-large"} -->

@@ -163,7 +163,7 @@
 
 <!-- wp:accordion-panel -->
 <div role="region" class="wp-block-accordion-panel"><!-- wp:paragraph -->
-<p>We share fees during your free 15-minute consultation, where we can talk openly about what you’re looking for and answer any questions about cost. <mark class="ob-placeholder">[ADD: sliding-scale or reduced-fee option, if offered]</mark></p>
+<p>We share fees during your free 15-minute consultation, where we can talk openly about what you’re looking for and answer any questions about cost. We also offer a sliding scale to make therapy accessible for those in need.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:accordion-panel --></div>
 <!-- /wp:accordion-item --></div>

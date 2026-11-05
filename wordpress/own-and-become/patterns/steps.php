@@ -34,11 +34,7 @@
 
 <!-- wp:heading {"textAlign":"center","fontSize":"large","level":3} -->
 <h3 class="wp-block-heading has-text-align-center has-large-font-size">Book a free consult</h3>
-<!-- /wp:heading -->
-
-<!-- wp:paragraph {"align":"center"} -->
-<p class="has-text-align-center">Choose a time for a free 15-minute call. There’s nothing to prepare. Just bring your commitment to taking this first step.</p>
-<!-- /wp:paragraph --></div>
+<!-- /wp:heading --></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
@@ -50,11 +46,7 @@
 
 <!-- wp:heading {"textAlign":"center","fontSize":"large","level":3} -->
 <h3 class="wp-block-heading has-text-align-center has-large-font-size">Get connected</h3>
-<!-- /wp:heading -->
-
-<!-- wp:paragraph {"align":"center"} -->
-<p class="has-text-align-center">Share a little about what’s going on and ask anything you like. Together, we’ll see whether we feel like a good fit.</p>
-<!-- /wp:paragraph --></div>
+<!-- /wp:heading --></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
@@ -66,11 +58,7 @@
 
 <!-- wp:heading {"textAlign":"center","fontSize":"large","level":3} -->
 <h3 class="wp-block-heading has-text-align-center has-large-font-size">Book your session</h3>
-<!-- /wp:heading -->
-
-<!-- wp:paragraph {"align":"center"} -->
-<p class="has-text-align-center">If it feels right, we’ll book your first session and begin, at a pace that feels right for you.</p>
-<!-- /wp:paragraph --></div>
+<!-- /wp:heading --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
 

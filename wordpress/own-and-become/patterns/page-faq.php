@@ -156,12 +156,12 @@
 
 <!-- wp:accordion-item -->
 <div class="wp-block-accordion-item"><!-- wp:accordion-heading -->
-<h3 class="wp-block-accordion-heading has-icon has-icon-right"><button type="button" class="wp-block-accordion-heading__toggle"><span class="wp-block-accordion-heading__toggle-title">Can I have sessions in Urdu or Hindi?</span><span class="wp-block-accordion-heading__toggle-icon" aria-hidden="true">+</span></button></h3>
+<h3 class="wp-block-accordion-heading has-icon has-icon-right"><button type="button" class="wp-block-accordion-heading__toggle"><span class="wp-block-accordion-heading__toggle-title">Can I have sessions in Urdu?</span><span class="wp-block-accordion-heading__toggle-icon" aria-hidden="true">+</span></button></h3>
 <!-- /wp:accordion-heading -->
 
 <!-- wp:accordion-panel -->
 <div role="region" class="wp-block-accordion-panel"><!-- wp:paragraph -->
-<p>Yes. Sessions are available in English, Urdu and Hindi, and you’re welcome to move between languages if that feels more natural. Translation for other languages is also available, at an additional cost. Let us know your preference when you get in touch.</p>
+<p>Yes. Sessions are available in English and Urdu, and you’re welcome to move between languages if that feels more natural. Translation for other languages is also available, at an additional cost. Let us know your preference when you get in touch.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:accordion-panel --></div>
 <!-- /wp:accordion-item -->

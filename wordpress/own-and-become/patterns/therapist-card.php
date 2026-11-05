@@ -40,7 +40,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"is-style-eyebrow"} -->
-<p class="is-style-eyebrow">Sessions in English, Urdu and Hindi</p>
+<p class="is-style-eyebrow">Sessions in English and Urdu</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->

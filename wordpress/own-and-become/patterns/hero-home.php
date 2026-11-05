@@ -22,7 +22,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"className":"ob-hero__lede","fontSize":"large"} -->
-<p class="ob-hero__lede has-large-font-size">Warm, practical online therapy for teens (14+), adults and couples across Canada, in English, Urdu or Hindi. We’ll walk alongside you as you make sense of what feels hard, and grow toward what matters to you.</p>
+<p class="ob-hero__lede has-large-font-size">Warm, practical online therapy for teens (14+), adults and couples across Canada, in English or Urdu. We’ll walk alongside you as you make sense of what feels hard, and grow toward what matters to you.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->

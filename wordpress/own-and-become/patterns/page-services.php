@@ -91,6 +91,26 @@
 <p class="ob-stretch" style="font-weight:700"><a href="/services/teen-therapy/">Learn more<span class="screen-reader-text"> about teen therapy (14+)</span> →</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"metadata":{"name":"Affordable therapy"},"className":"is-style-card-tint","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|40","right":"var:preset|spacing|40"},"margin":{"top":"var:preset|spacing|40"},"blockGap":"var:preset|spacing|30"}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"top"}} -->
+<div class="wp-block-group is-style-card-tint" style="margin-top:var(--wp--preset--spacing--40);padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)"><!-- wp:image {"width":"3rem","sizeSlug":"full","className":"ob-icon"} -->
+<figure class="wp-block-image size-full is-resized ob-icon"><img src="<?php echo own_and_become_asset( 'icons/heart-leaf.svg' ); ?>" alt="" style="width:3rem;height:auto"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:group {"style":{"spacing":{"blockGap":"0.6rem"}},"layout":{"type":"flex","orientation":"vertical"}} -->
+<div class="wp-block-group"><!-- wp:heading {"fontSize":"large","level":3} -->
+<h3 class="wp-block-heading has-large-font-size">Affordable therapy</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Cost shouldn’t stand in the way of getting support. We offer a sliding scale to make therapy accessible for those in need. Ask about it in your free consult, and we’ll work out a fee that fits your situation.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontWeight":"700"}}} -->
+<p style="font-weight:700"><a href="/book/">Ask about the sliding scale →</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
