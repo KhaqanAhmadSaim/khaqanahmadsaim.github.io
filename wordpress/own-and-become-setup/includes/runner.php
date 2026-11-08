@@ -242,7 +242,7 @@ function ob_setup_form( &$state, &$log ) {
 	$props['mail']['body']                 = ob_setup_form_mail_body();
 	$props['mail']['additional_headers']   = 'Reply-To: [your-email]';
 	$props['mail_2']['active']             = false;
-	$props['messages']['mail_sent_ok']     = 'Thank you for reaching out. We’ll get back to you within 1–2 business days.';
+	$props['messages']['mail_sent_ok']     = 'Thank you for reaching out. We’ll get back to you within 3–5 business days.';
 	$props['messages']['validation_error'] = 'A few fields need your attention. Please check the highlighted fields and try again.';
 	$props['messages']['mail_sent_ng']     = 'Sorry, something went wrong and your message wasn’t sent. Please try again later, or contact us by phone.';
 	$props['messages']['accept_terms']     = 'Please tick the box to confirm you’ve read this note before sending.';

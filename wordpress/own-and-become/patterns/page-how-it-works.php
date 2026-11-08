@@ -115,9 +115,7 @@
 <p>You’ll receive a secure link to complete intake and consent forms, and to share anything you’d like us to know ahead of time.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p><mark class="ob-placeholder">[CONFIRM: intake process and forms (for example, via Jane)]</mark></p>
-<!-- /wp:paragraph --></div>
+</div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-card","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|40","right":"var:preset|spacing|40"},"blockGap":"0.85rem"},"dimensions":{"minHeight":"100%"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"}} -->

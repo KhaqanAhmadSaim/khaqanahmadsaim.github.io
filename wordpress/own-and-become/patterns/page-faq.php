@@ -33,7 +33,7 @@
 <h2 class="wp-block-heading has-x-large-font-size" style="margin-top:var(--wp--preset--spacing--50)">Getting started</h2>
 <!-- /wp:heading -->
 
-<!-- wp:accordion -->
+<!-- wp:accordion {"autoclose":true} -->
 <div role="group" class="wp-block-accordion"><!-- wp:accordion-item -->
 <div class="wp-block-accordion-item"><!-- wp:accordion-heading -->
 <h3 class="wp-block-accordion-heading has-icon has-icon-right"><button type="button" class="wp-block-accordion-heading__toggle"><span class="wp-block-accordion-heading__toggle-title">How do I know if therapy is right for me?</span><span class="wp-block-accordion-heading__toggle-icon" aria-hidden="true">+</span></button></h3>
@@ -99,7 +99,7 @@
 <h2 id="fees" class="wp-block-heading has-x-large-font-size" style="margin-top:var(--wp--preset--spacing--50)">Fees &amp; insurance</h2>
 <!-- /wp:heading -->
 
-<!-- wp:accordion -->
+<!-- wp:accordion {"autoclose":true} -->
 <div role="group" class="wp-block-accordion"><!-- wp:accordion-item -->
 <div class="wp-block-accordion-item"><!-- wp:accordion-heading -->
 <h3 class="wp-block-accordion-heading has-icon has-icon-right"><button type="button" class="wp-block-accordion-heading__toggle"><span class="wp-block-accordion-heading__toggle-title">How do fees work?</span><span class="wp-block-accordion-heading__toggle-icon" aria-hidden="true">+</span></button></h3>
@@ -131,19 +131,19 @@
 
 <!-- wp:accordion-panel -->
 <div role="region" class="wp-block-accordion-panel"><!-- wp:paragraph -->
-<p>Many extended health plans include some coverage for psychotherapy, but every plan is different. We recommend checking with your provider whether sessions with a Registered Psychotherapist (Qualifying) are covered. <mark class="ob-placeholder">[CONFIRM: whether receipts are issued for benefits claims]</mark></p>
+<p>Many extended health plans include some coverage for psychotherapy, but every plan is different. We recommend checking with your provider whether sessions with a Registered Psychotherapist (Qualifying) are covered.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:accordion-panel --></div>
 <!-- /wp:accordion-item -->
 
 <!-- wp:accordion-item -->
 <div class="wp-block-accordion-item"><!-- wp:accordion-heading -->
-<h3 class="wp-block-accordion-heading has-icon has-icon-right"><button type="button" class="wp-block-accordion-heading__toggle"><span class="wp-block-accordion-heading__toggle-title">Is there an extra cost for translation?</span><span class="wp-block-accordion-heading__toggle-icon" aria-hidden="true">+</span></button></h3>
+<h3 class="wp-block-accordion-heading has-icon has-icon-right"><button type="button" class="wp-block-accordion-heading__toggle"><span class="wp-block-accordion-heading__toggle-title">Is there an extra cost for interpretation?</span><span class="wp-block-accordion-heading__toggle-icon" aria-hidden="true">+</span></button></h3>
 <!-- /wp:accordion-heading -->
 
 <!-- wp:accordion-panel -->
 <div role="region" class="wp-block-accordion-panel"><!-- wp:paragraph -->
-<p>Sessions in English and Urdu are at the standard fee. Translation for other languages is available at an additional cost, which we’ll confirm with you during your free consult.</p>
+<p>Sessions in English and Urdu are at the standard fee. Interpretation for Russian, Latvian and Punjabi is available at an additional cost, which we’ll confirm with you during your free consult.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:accordion-panel --></div>
 <!-- /wp:accordion-item -->
@@ -155,7 +155,7 @@
 
 <!-- wp:accordion-panel -->
 <div role="region" class="wp-block-accordion-panel"><!-- wp:paragraph -->
-<p>Payment is handled securely through our booking system, Jane. <mark class="ob-placeholder">[ADD accepted payment methods and when payment is taken]</mark></p>
+<p>We accept credit cards and e-transfers. Payment is taken at the end of each session.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:accordion-panel --></div>
 <!-- /wp:accordion-item -->
@@ -167,7 +167,7 @@
 
 <!-- wp:accordion-panel -->
 <div role="region" class="wp-block-accordion-panel"><!-- wp:paragraph -->
-<p><mark class="ob-placeholder">[ADD CANCELLATION POLICY: how much notice is needed to cancel or reschedule, and whether a fee applies]</mark></p>
+<p>A minimum of 48 hours’ notice is required to cancel or reschedule an appointment. Exceptions may be considered at your therapist’s discretion in the event of emergencies or exceptional circumstances.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:accordion-panel --></div>
 <!-- /wp:accordion-item --></div>
@@ -177,7 +177,7 @@
 <h2 class="wp-block-heading has-x-large-font-size" style="margin-top:var(--wp--preset--spacing--50)">Sessions</h2>
 <!-- /wp:heading -->
 
-<!-- wp:accordion -->
+<!-- wp:accordion {"autoclose":true} -->
 <div role="group" class="wp-block-accordion"><!-- wp:accordion-item -->
 <div class="wp-block-accordion-item"><!-- wp:accordion-heading -->
 <h3 class="wp-block-accordion-heading has-icon has-icon-right"><button type="button" class="wp-block-accordion-heading__toggle"><span class="wp-block-accordion-heading__toggle-title">Do you offer in-person sessions?</span><span class="wp-block-accordion-heading__toggle-icon" aria-hidden="true">+</span></button></h3>
@@ -209,7 +209,7 @@
 
 <!-- wp:accordion-panel -->
 <div role="region" class="wp-block-accordion-panel"><!-- wp:paragraph -->
-<p>Yes. Sessions are available in English and Urdu, and you’re welcome to move between languages if that feels more natural. Translation for other languages is also available, at an additional cost. Let us know your preference when you get in touch.</p>
+<p>Yes. Sessions are available in English and Urdu, and you’re welcome to move between languages if that feels more natural. Interpretation is also available for Russian, Latvian and Punjabi, at an additional cost. Let us know your preference when you get in touch.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:accordion-panel --></div>
 <!-- /wp:accordion-item -->
@@ -255,7 +255,7 @@
 <h2 class="wp-block-heading has-x-large-font-size" style="margin-top:var(--wp--preset--spacing--50)">Privacy &amp; safety</h2>
 <!-- /wp:heading -->
 
-<!-- wp:accordion -->
+<!-- wp:accordion {"autoclose":true} -->
 <div role="group" class="wp-block-accordion"><!-- wp:accordion-item -->
 <div class="wp-block-accordion-item"><!-- wp:accordion-heading -->
 <h3 class="wp-block-accordion-heading has-icon has-icon-right"><button type="button" class="wp-block-accordion-heading__toggle"><span class="wp-block-accordion-heading__toggle-title">Is what I share kept confidential?</span><span class="wp-block-accordion-heading__toggle-icon" aria-hidden="true">+</span></button></h3>

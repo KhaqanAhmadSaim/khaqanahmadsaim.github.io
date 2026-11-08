@@ -100,7 +100,7 @@ function ob_setup_pages() {
 			'title'   => 'Contact',
 			'pattern' => 'page-contact',
 			'order'   => 90,
-			'seo'     => array( 'Contact Own & Become | Online Therapy, Ontario', 'Questions about therapy or not sure where to start? Send us a message and we’ll reply within 1–2 business days.' ),
+			'seo'     => array( 'Contact Own & Become | Online Therapy, Ontario', 'Questions about therapy or not sure where to start? Send us a message and we’ll reply within 3–5 business days.' ),
 		),
 		array(
 			'slug'    => 'book',
@@ -172,7 +172,7 @@ function ob_setup_menu_items() {
 function ob_setup_synced_patterns() {
 	return array(
 		'crisis-notice' => 'Crisis notice',
-		'cta-book'      => 'Call to action: Ready when you are',
+		'cta-book'      => 'Call to action: Get connected',
 		'leaf-divider'  => 'Leaf-curve divider',
 	);
 }
@@ -293,18 +293,6 @@ function ob_setup_form_markup() {
 <legend class="ob-legend">What can we help with?</legend>
 [radio reason use_label_element default:1 "A free 15-minute consult" "Booking an appointment" "A general question"]
 </fieldset>
-<fieldset>
-<legend class="ob-legend">Preferred format <span class="ob-hint">All sessions are currently online.</span></legend>
-[radio format use_label_element default:1 "Online (video)" "No preference"]
-</fieldset>
-<fieldset>
-<legend class="ob-legend">Preferred language</legend>
-[radio language use_label_element default:1 "English" "Urdu" "No preference"]
-</fieldset>
-<fieldset>
-<legend class="ob-legend">Times that usually suit you <span class="ob-hint">Choose any that apply</span></legend>
-[checkbox times use_label_element "Weekday mornings" "Weekday afternoons" "Weekday evenings" "Weekends"]
-</fieldset>
 <p class="ob-field"><label for="ob-message">A short message <span class="ob-hint">Please don’t include sensitive or detailed health information here.</span></label>[textarea your-message id:ob-message x4 maxlength:1500]</p>
 [honeypot ob-website-url]
 <p class="ob-field">[acceptance ob-consent] I understand this form is not for emergencies, and that my details will only be used to respond to my enquiry. [/acceptance]</p>
@@ -318,5 +306,5 @@ FORM;
  * @return string
  */
 function ob_setup_form_mail_body() {
-	return "Name: [your-name]\nEmail: [your-email]\nPhone: [your-phone]\n\nWhat can we help with: [reason]\nPreferred format: [format]\nPreferred language: [language]\nTimes that suit: [times]\n\nMessage:\n[your-message]\n\n--\nSent from the contact form on [_site_title] ([_site_url])";
+	return "Name: [your-name]\nEmail: [your-email]\nPhone: [your-phone]\n\nWhat can we help with: [reason]\n\nMessage:\n[your-message]\n\n--\nSent from the contact form on [_site_title] ([_site_url])";
 }

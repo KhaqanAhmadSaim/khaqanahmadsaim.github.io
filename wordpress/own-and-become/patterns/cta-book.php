@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: Call to action: Ready when you are
+ * Title: Call to action: Get connected
  * Slug: own-and-become/cta-book
  * Categories: own-and-become
  * Description: Final call to action with the Book a Free Consult button.
@@ -16,7 +16,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"textAlign":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|base"}}}},"textColor":"base"} -->
-<h2 class="wp-block-heading has-text-align-center has-base-color has-text-color has-link-color">Ready when you are.</h2>
+<h2 class="wp-block-heading has-text-align-center has-base-color has-text-color has-link-color">Get connected.</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center","fontSize":"large"} -->

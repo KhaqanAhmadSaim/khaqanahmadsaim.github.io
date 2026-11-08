@@ -44,14 +44,14 @@ On a site copied from the live one, also deactivate **WooCommerce**: otherwise i
 | Any page's text, images, buttons, FAQ | **Pages →** the page **→ Edit** |
 | Header, info bar (phone, Client Login), footer, contact details, social links | **Appearance → Editor → Patterns → Template parts** (Header / Footer / Mobile menu overlay) |
 | Main menu (including the Services dropdown) | **Appearance → Editor → Navigation** |
-| Crisis notice, "Ready when you are" call to action, leaf divider (edit once, updates everywhere) | **Appearance → Editor → Patterns → Own & Become** (synced patterns) |
+| Crisis notice, "Get connected" call to action, leaf divider (edit once, updates everywhere) | **Appearance → Editor → Patterns → Own & Become** (synced patterns) |
 | Add a section to any page | In the editor: **+ → Patterns → "Own & Become: sections"** |
 | Colours and fonts site-wide | **Appearance → Editor → Styles** |
 | Form fields and the email address it sends to | **Contact → Contact Forms → Own and Become contact form** (the **Mail** tab) |
 | SEO title and description of a page | The page's editor, in the *SEO Framework* box at the bottom |
 | Blog posts and categories | **Posts** |
 
-**Booking (Jane):** every "Book a Free Consult" button (header, mobile menu, home, service pages, footer and the shared "Ready when you are" box) links straight to the Jane booking page, https://ownandbecome.janeapp.com. The `/book/` page stays as a short "what to expect" page with a **Book on Jane** button and the contact form for people who prefer to send a message. If the Jane address ever changes, search the editor for `janeapp.com`. There's no Client Login link: clients sign in through Jane.
+**Booking (Jane):** every "Book a Free Consult" button (header, mobile menu, home, service pages, footer and the shared "Get connected" box) links straight to the Jane booking page, https://ownandbecome.janeapp.com. The `/book/` page stays as a short "what to expect" page with a **Book on Jane** button and the contact form for people who prefer to send a message. If the Jane address ever changes, search the editor for `janeapp.com`. There's no Client Login link: clients sign in through Jane.
 
 **Fees:** there is no separate Fees page. Fees, the sliding scale, insurance, translation cost, payment and cancellation are answered in the FAQ's **Fees & insurance** section (`/faq/#fees`), and old `/fees/` links redirect there. The sliding scale is also on the Services page.
 

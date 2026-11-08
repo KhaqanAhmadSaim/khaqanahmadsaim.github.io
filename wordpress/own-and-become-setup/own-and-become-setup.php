@@ -72,7 +72,7 @@ function ob_setup_page() {
 		<ul style="list-style:disc;padding-left:1.5em;max-width:760px">
 			<li><?php esc_html_e( 'Set the site title, tagline, time zone, permalinks (Post name) and turn off comments for new content.', 'own-and-become-setup' ); ?></li>
 			<li><?php esc_html_e( 'Add the logo mark as the Site Logo and the favicon (Site Icon).', 'own-and-become-setup' ); ?></li>
-			<li><?php esc_html_e( 'Create synced patterns: Crisis notice, “Ready when you are” call to action, Leaf-curve divider.', 'own-and-become-setup' ); ?></li>
+			<li><?php esc_html_e( 'Create synced patterns: Crisis notice, “Get connected” call to action, Leaf-curve divider.', 'own-and-become-setup' ); ?></li>
 			<li><?php esc_html_e( 'Create the contact form (Contact Form 7 with honeypot spam protection).', 'own-and-become-setup' ); ?></li>
 			<li><?php esc_html_e( 'Create every page in the sitemap, the main menu with the Services dropdown, and 3 placeholder blog posts.', 'own-and-become-setup' ); ?></li>
 			<li><?php esc_html_e( 'Set Home as the front page and Resources as the blog page, and add SEO titles and descriptions.', 'own-and-become-setup' ); ?></li>

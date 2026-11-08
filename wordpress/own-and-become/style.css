@@ -439,7 +439,7 @@ mark.ob-placeholder,
 
 .is-style-card-tint {
 	background: var(--wp--preset--color--tint);
-	border: 1px solid rgba(139, 163, 139, 0.28);
+	border: 1px solid rgba(139, 162, 139, 0.28);
 	border-radius: 16px;
 }
 
@@ -451,7 +451,7 @@ mark.ob-placeholder,
 .is-style-card:has(a:hover),
 .is-style-card-tint:has(a:hover) {
 	box-shadow: var(--wp--preset--shadow--lifted);
-	border-color: rgba(139, 163, 139, 0.55);
+	border-color: rgba(139, 162, 139, 0.55);
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -687,6 +687,25 @@ ul.is-style-leaf-list > li::before {
 	background: url("assets/icons/leaf-bullet.svg") center / contain no-repeat;
 }
 
+/* Therapist page: approaches as compact tags */
+.ob-tag-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.4rem;
+	list-style: none;
+	padding: 0;
+	margin: 0.35rem 0 0;
+}
+
+.ob-tag-list li {
+	background: var(--wp--preset--color--tint);
+	border-radius: 999px;
+	padding: 0.2rem 0.7rem;
+	font-size: 0.875rem;
+	color: var(--wp--preset--color--primary-deep);
+	line-height: 1.45;
+}
+
 /* Therapist card portrait */
 .ob-portrait img {
 	aspect-ratio: 4 / 5;
@@ -765,7 +784,7 @@ ul.is-style-leaf-list > li::before {
 }
 
 .wp-block-accordion-item.is-open {
-	border-color: rgba(139, 163, 139, 0.6);
+	border-color: rgba(139, 162, 139, 0.6);
 	box-shadow: var(--wp--preset--shadow--soft);
 }
 
@@ -867,7 +886,7 @@ ul.is-style-leaf-list > li::before {
 .ob-form select:focus,
 .ob-form textarea:focus {
 	border-color: var(--wp--preset--color--primary);
-	box-shadow: 0 0 0 3px rgba(61, 94, 77, 0.2);
+	box-shadow: 0 0 0 3px rgba(62, 94, 77, 0.2);
 	outline: none;
 }
 

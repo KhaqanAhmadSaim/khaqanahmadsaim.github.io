@@ -51,22 +51,6 @@
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"0.9rem"}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"top"}} -->
 <div class="wp-block-group"><!-- wp:image {"width":"2.5rem","sizeSlug":"full","className":"ob-icon ob-icon--sm"} -->
-<figure class="wp-block-image size-full is-resized ob-icon ob-icon--sm"><img src="<?php echo own_and_become_asset( 'icons/calendar.svg' ); ?>" alt="" style="width:2.5rem;height:auto"/></figure>
-<!-- /wp:image -->
-
-<!-- wp:group {"style":{"spacing":{"blockGap":"0.1rem"}},"layout":{"type":"default"}} -->
-<div class="wp-block-group"><!-- wp:paragraph {"textColor":"primary-deep"} -->
-<p class="has-primary-deep-color has-text-color"><strong>Hours</strong></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph {"fontSize":"small"} -->
-<p class="has-small-font-size"><mark class="ob-placeholder">[ADD HOURS]</mark></p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group --></div>
-<!-- /wp:group -->
-
-<!-- wp:group {"style":{"spacing":{"blockGap":"0.9rem"}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"top"}} -->
-<div class="wp-block-group"><!-- wp:image {"width":"2.5rem","sizeSlug":"full","className":"ob-icon ob-icon--sm"} -->
 <figure class="wp-block-image size-full is-resized ob-icon ob-icon--sm"><img src="<?php echo own_and_become_asset( 'icons/map.svg' ); ?>" alt="" style="width:2.5rem;height:auto"/></figure>
 <!-- /wp:image -->
 
@@ -98,10 +82,10 @@
 <!-- /wp:group -->
 
 <!-- wp:paragraph {"textColor":"muted","fontSize":"small"} -->
-<p class="has-muted-color has-text-color has-small-font-size">We’ll get back to you within 1–2 business days.</p>
+<p class="has-muted-color has-text-color has-small-font-size">We’ll get back to you within 3–5 business days.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:pattern {"slug":"own-and-become/crisis-notice"} /--></div>
+</div>
 <!-- /wp:group --></div>
 <!-- /wp:column -->
 

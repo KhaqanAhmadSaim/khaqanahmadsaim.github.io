@@ -55,7 +55,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><mark class="ob-placeholder">[ADD: a few sentences about the practice in your own words, e.g. why you started it and who you hope to help]</mark></p>
+<p>I started Own &amp; Become out of a desire to create a space where people feel heard, supported, and comfortable showing up as they are. I hope to support individuals and couples as they navigate life’s challenges, relationships, transitions, and the many experiences that shape who we are. My vision is to offer a compassionate, collaborative space where clients can better understand themselves, work towards their personal goals, and feel empowered to grow and become more connected with themselves and others.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column --></div>
@@ -81,7 +81,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><mark class="ob-placeholder">[PLACEHOLDER MISSION, to be finalised]</mark> To offer warm, practical and culturally responsive therapy that helps people own their stories and grow into who they’re choosing to be.</p>
+<p>At Own &amp; Become, our mission is to create a warm, welcoming, and judgment-free space where people feel safe to explore their experiences, embrace who they are, and discover who they want to become. Through compassionate connection, individualized care, and a collaborative approach, we aim to empower individuals, couples, and families to navigate life’s challenges, build meaningful connections, and work towards their personal goals. We believe growth begins with understanding and accepting ourselves, and that meaningful change happens when we feel supported, valued, and empowered along the way.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -142,14 +142,12 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Every culture, faith, identity and family is welcome here, without judgment.</p>
+<p>Every culture, faith and identity is welcome here. Everyone is welcome, without judgment.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:paragraph {"align":"center","fontSize":"small","style":{"spacing":{"margin":{"top":"var:preset|spacing|30"}}}} -->
-<p class="has-text-align-center has-small-font-size" style="margin-top:var(--wp--preset--spacing--30)"><mark class="ob-placeholder">[PLACEHOLDER VALUES, to be finalised. Edit or replace these four cards.]</mark></p>
-<!-- /wp:paragraph --></div>
+</div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
@@ -255,12 +253,10 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>We welcome people of all genders, sexual orientations, cultures, faiths, abilities, body sizes and family structures. We work in English and Urdu, and translation is provided for <mark class="ob-placeholder">[ADD LANGUAGES]</mark> languages, at an additional cost.</p>
+<p>We welcome people of all genders, sexual orientations, cultures, faiths, abilities, body sizes and family structures. We work in English and Urdu, and interpretation is available for Russian, Latvian and Punjabi, at an additional cost.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"fontSize":"small"} -->
-<p class="has-small-font-size"><mark class="ob-placeholder">[ADD: any specific communities you serve or would like to highlight]</mark></p>
-<!-- /wp:paragraph --></div>
+</div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->

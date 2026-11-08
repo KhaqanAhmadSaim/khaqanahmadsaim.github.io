@@ -32,7 +32,7 @@
 <!-- /wp:column -->
 
 <!-- wp:column {"width":"64%"} -->
-<div class="wp-block-column" style="flex-basis:64%"><!-- wp:accordion -->
+<div class="wp-block-column" style="flex-basis:64%"><!-- wp:accordion {"autoclose":true} -->
 <div role="group" class="wp-block-accordion"><!-- wp:accordion-item -->
 <div class="wp-block-accordion-item"><!-- wp:accordion-heading -->
 <h3 class="wp-block-accordion-heading has-icon has-icon-right"><button type="button" class="wp-block-accordion-heading__toggle"><span class="wp-block-accordion-heading__toggle-title">Is therapy covered by insurance or workplace benefits?</span><span class="wp-block-accordion-heading__toggle-icon" aria-hidden="true">+</span></button></h3>
@@ -40,7 +40,7 @@
 
 <!-- wp:accordion-panel -->
 <div role="region" class="wp-block-accordion-panel"><!-- wp:paragraph -->
-<p>Many extended health plans include some coverage for psychotherapy, but every plan is different. We recommend checking with your provider whether sessions with a Registered Psychotherapist (Qualifying) are covered. <mark class="ob-placeholder">[CONFIRM: whether receipts are issued for benefits claims]</mark></p>
+<p>Many extended health plans include some coverage for psychotherapy, but every plan is different. We recommend checking with your provider whether sessions with a Registered Psychotherapist (Qualifying) are covered.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:accordion-panel --></div>
 <!-- /wp:accordion-item -->
@@ -112,7 +112,7 @@
 
 <!-- wp:accordion-panel -->
 <div role="region" class="wp-block-accordion-panel"><!-- wp:paragraph -->
-<p><mark class="ob-placeholder">[ADD CANCELLATION POLICY: how much notice is needed to cancel or reschedule, and whether a fee applies]</mark></p>
+<p>A minimum of 48 hours’ notice is required to cancel or reschedule an appointment. Exceptions may be considered at your therapist’s discretion in the event of emergencies or exceptional circumstances.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:accordion-panel --></div>
 <!-- /wp:accordion-item --></div>

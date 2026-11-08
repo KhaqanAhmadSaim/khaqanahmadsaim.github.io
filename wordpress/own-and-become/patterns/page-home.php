@@ -25,8 +25,6 @@
 
 <!-- wp:pattern {"slug":"own-and-become/steps"} /-->
 
-<!-- wp:pattern {"slug":"own-and-become/fees-summary"} /-->
-
 <!-- wp:pattern {"slug":"own-and-become/faq-home"} /-->
 
 <!-- wp:pattern {"slug":"own-and-become/cta-book"} /-->

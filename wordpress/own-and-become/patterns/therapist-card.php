@@ -28,11 +28,11 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"textColor":"primary-deep"} -->
-<p class="has-primary-deep-color has-text-color"><strong>Registered Psychotherapist (Qualifying)</strong><br>Clinic Owner · RP (Qualifying) · MACP</p>
+<p class="has-primary-deep-color has-text-color"><strong>Registered Psychotherapist (Qualifying)</strong><br>Clinic Founder &amp; Owner · RP (Qualifying) · MACP</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"fontSize":"small"} -->
-<p class="has-small-font-size"><mark class="ob-placeholder">[ADD: regulatory college and registration number, e.g. College of Registered Psychotherapists of Ontario (CRPO) #]</mark></p>
+<p class="has-small-font-size"><strong>College of Registered Psychotherapists of Ontario (CRPO) # 21464</strong></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->

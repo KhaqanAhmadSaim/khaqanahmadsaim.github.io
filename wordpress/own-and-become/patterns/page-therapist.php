@@ -15,23 +15,23 @@
 <div class="wp-block-columns are-vertically-aligned-center"><!-- wp:column {"width":"58%","verticalAlignment":"center"} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:58%"><!-- wp:group {"style":{"spacing":{"blockGap":"1.1rem"}},"layout":{"type":"default"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"className":"is-style-eyebrow"} -->
-<p class="is-style-eyebrow">Meet your therapist</p>
+<p class="is-style-eyebrow">Your therapist at Own &amp; Become</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"fontSize":"xx-large","level":1} -->
-<h1 class="wp-block-heading has-xx-large-font-size">Ayesha Munawar</h1>
+<h1 class="wp-block-heading has-xx-large-font-size">Meet Ayesha Munawar</h1>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"fontSize":"large","textColor":"primary-deep"} -->
-<p class="has-primary-deep-color has-text-color has-large-font-size"><strong>Registered Psychotherapist (Qualifying)</strong><br>Clinic Owner · RP (Qualifying) · MACP</p>
+<p class="has-primary-deep-color has-text-color has-large-font-size"><strong>Registered Psychotherapist (Qualifying)</strong><br>Clinic Founder &amp; Owner · RP (Qualifying) · MACP</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"fontSize":"small"} -->
-<p class="has-small-font-size"><mark class="ob-placeholder">[ADD: regulatory college and registration number]</mark></p>
+<p class="has-small-font-size"><strong>College of Registered Psychotherapists of Ontario (CRPO) # 21464</strong></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"fontFamily":"heading","fontSize":"x-large","textColor":"burgundy","style":{"typography":{"fontStyle":"italic","lineHeight":"1.35"}}} -->
-<p class="has-burgundy-color has-text-color has-x-large-font-size has-heading-font-family" style="font-style:italic;line-height:1.35">“You don’t need the right words or a clear plan to begin. Here, you can exhale.”</p>
+<p class="has-burgundy-color has-text-color has-x-large-font-size has-heading-font-family" style="font-style:italic;line-height:1.35">“There is no one-size-fits-all to growth. Let’s find what works for you.”</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons -->
@@ -65,19 +65,39 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Before I was a therapist, I was a daughter, sister, wife, and mother. Those roles taught me about love, loss, patience, and resilience. They also showed me that life can be complicated, even in the moments meant to bring joy.</p>
+<p>Life has a way of teaching us things we never expected. As an immigrant, daughter, sister, wife, and mother, I’ve experienced how relationships, family, culture, and life’s many transitions shape who we are. Like everyone, I’ve had my own moments of uncertainty, challenges, and figuring things out along the way.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>I work with people through the seasons that feel heavy, uncertain, or lonely: anxiety, grief, relationship struggles, self-doubt, pregnancy and postpartum changes, or simply feeling stuck. You don’t need the right words or a clear plan to begin. Here, you can exhale.</p>
+<p>These experiences, along with my passion for understanding people, are what drew me to counselling. I genuinely enjoy connecting with others, hearing their stories, and helping them find their way through difficult moments.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"fontSize":"large","level":3} -->
+<h3 class="wp-block-heading has-large-font-size">Beyond the therapy room</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Outside of my work, I love spending time with my loved ones, exploring my creative side through art and crafts, and doing nails. I enjoy meaningful conversations, genuine connections, and finding joy in the little things that make life special.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"fontSize":"large","level":3} -->
+<h3 class="wp-block-heading has-large-font-size">Welcome to Own &amp; Become</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Reaching out for therapy can feel like a big step, and I’m glad you’ve found your way here.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Together, we’ll make sense of what brought you here and build practical tools for change, at a pace that feels right for you. I bring warmth, curiosity, and compassion to every session, and I believe everyone has strength and the capacity to grow, even when it’s hard to see.</p>
+<p>Whether you’re feeling overwhelmed, navigating a difficult chapter, working through relationship challenges, or simply wanting to understand yourself better, you don’t have to figure it all out on your own.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>It’s a privilege to be invited into your story. My promise is a relationship built on trust, honesty, and real human connection.</p>
+<p>My hope is to offer you a space where you feel comfortable exploring, growing, and discovering what meaningful change looks like for you.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"fontFamily":"heading","fontSize":"large","textColor":"burgundy","style":{"typography":{"fontStyle":"italic"}}} -->
+<p class="has-burgundy-color has-text-color has-large-font-size has-heading-font-family" style="font-style:italic">Your story matters, and there’s room for every part of it.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"fontFamily":"heading","fontSize":"large","textColor":"primary","style":{"typography":{"fontStyle":"italic"}}} -->
@@ -162,27 +182,43 @@
 <p class="has-primary-deep-color has-text-color" style="margin-bottom:0"><strong>Approaches</strong></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"fontSize":"small"} -->
-<p class="has-small-font-size">Person-centred, mindfulness-based, ACT, CBT, IFS-informed, EFT and SFBT</p>
-<!-- /wp:paragraph --></div>
+<!-- wp:list {"className":"ob-tag-list","fontSize":"small"} -->
+<ul class="wp-block-list ob-tag-list has-small-font-size"><!-- wp:list-item -->
+<li>Acceptance and Commitment (ACT)</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>Cognitive Behavioural (CBT)</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>Compassion Focused</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>Culturally Sensitive</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>Emotionally Focused</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>Gottman Method</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>Internal Family Systems (IFS)</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>Mindfulness-Based (MBCT)</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>Motivational Interviewing</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>Multicultural</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>Person-Centered</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>Solution Focused Brief (SFBT)</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>Somatic</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>Strength-Based</li>
+<!-- /wp:list-item --><!-- wp:list-item -->
+<li>Trauma Focused</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"style":{"spacing":{"blockGap":"0.9rem"}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"top"}} -->
-<div class="wp-block-group"><!-- wp:image {"width":"2.5rem","sizeSlug":"full","className":"ob-icon ob-icon--sm"} -->
-<figure class="wp-block-image size-full is-resized ob-icon ob-icon--sm"><img src="<?php echo own_and_become_asset( 'icons/confidential.svg' ); ?>" alt="" style="width:2.5rem;height:auto"/></figure>
-<!-- /wp:image -->
-
-<!-- wp:group {"style":{"spacing":{"blockGap":"0.15rem"}},"layout":{"type":"default"}} -->
-<div class="wp-block-group"><!-- wp:paragraph {"textColor":"primary-deep","style":{"spacing":{"margin":{"bottom":"0"}}}} -->
-<p class="has-primary-deep-color has-text-color" style="margin-bottom:0"><strong>Registration</strong></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph {"fontSize":"small"} -->
-<p class="has-small-font-size">RP (Qualifying), MACP. <mark class="ob-placeholder">[ADD: regulatory college, registration number and clinical supervisor details, if applicable]</mark></p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group --></div>
-<!-- /wp:group --></div>
+</div>
 <!-- /wp:group --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -191,14 +227,34 @@
 
 <!-- wp:group {"metadata":{"name":"Credentials"},"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|70"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--70)"><!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
-<div class="wp-block-group alignwide"><!-- wp:group {"className":"is-style-card","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"},"blockGap":"1rem"}},"layout":{"type":"constrained","contentSize":"720px"}} -->
-<div class="wp-block-group is-style-card" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)"><!-- wp:heading {"fontSize":"x-large"} -->
+<div class="wp-block-group alignwide"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"grid","minimumColumnWidth":"20rem","columnCount":2}} -->
+<div class="wp-block-group"><!-- wp:group {"className":"is-style-card","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"},"blockGap":"1rem"},"dimensions":{"minHeight":"100%"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-card" style="min-height:100%;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)"><!-- wp:heading {"fontSize":"x-large"} -->
+<h2 class="wp-block-heading has-x-large-font-size">My approach to therapy</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>I believe therapy should be a space where you feel heard, understood, and accepted without judgment. My approach is warm, compassionate, and collaborative. I draw from CBT, ACT, mindfulness, Emotion-Focused Therapy and other approaches to support you in exploring your experiences, navigating challenges, and working toward your personal goals, at a pace that feels right for you.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>I’m particularly passionate about supporting individuals and couples navigating anxiety, depression, trauma, relationship challenges, women’s mental health, and life’s many transitions, including pregnancy, miscarriage, and postpartum experiences.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"is-style-card","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"},"blockGap":"1rem"},"dimensions":{"minHeight":"100%"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-card" style="min-height:100%;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)"><!-- wp:heading {"fontSize":"x-large"} -->
 <h2 class="wp-block-heading has-x-large-font-size">Education &amp; training</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><mark class="ob-placeholder">[ADD: degrees, training and professional memberships exactly as they should appear]</mark></p>
+<p>I hold a Bachelor of Science in Life Sciences from the University of Toronto and a Master of Arts in Counselling Psychology from Yorkville University.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>I have completed additional professional training in “Neuroaffirming Acceptance and Commitment Therapy (ACT) for Autism and ADHD”, as well as “Gottman Method Couples Therapy Level 1”.</p>
 <!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->

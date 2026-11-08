@@ -131,7 +131,7 @@
 <h2 class="wp-block-heading has-x-large-font-size">Questions about individual therapy</h2>
 <!-- /wp:heading -->
 
-<!-- wp:accordion -->
+<!-- wp:accordion {"autoclose":true} -->
 <div role="group" class="wp-block-accordion"><!-- wp:accordion-item -->
 <div class="wp-block-accordion-item"><!-- wp:accordion-heading -->
 <h3 class="wp-block-accordion-heading has-icon has-icon-right"><button type="button" class="wp-block-accordion-heading__toggle"><span class="wp-block-accordion-heading__toggle-title">What is the first session like?</span><span class="wp-block-accordion-heading__toggle-icon" aria-hidden="true">+</span></button></h3>
