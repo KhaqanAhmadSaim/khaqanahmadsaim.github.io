@@ -236,7 +236,7 @@ function ob_setup_form( &$state, &$log ) {
 	$props = $form->get_properties();
 
 	$props['form']                         = ob_setup_form_markup();
-	$props['mail']['recipient']            = '[_site_admin_email]';
+	$props['mail']['recipient']            = 'info@ownandbecome.com';
 	$props['mail']['subject']              = 'New website enquiry from [your-name]';
 	$props['mail']['sender']               = 'Own & Become website <wordpress@' . wp_parse_url( home_url(), PHP_URL_HOST ) . '>';
 	$props['mail']['body']                 = ob_setup_form_mail_body();
@@ -250,7 +250,7 @@ function ob_setup_form( &$state, &$log ) {
 
 	$form->set_properties( $props );
 	$state['form'] = $form->save();
-	$log[]         = 'Contact form created: “Own and Become contact form” (sends to the site admin email for now).';
+	$log[]         = 'Contact form created: “Own and Become contact form” (sends to info@ownandbecome.com).';
 }
 
 /**

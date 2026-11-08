@@ -47,7 +47,7 @@ On a site copied from the live one, also deactivate **WooCommerce**: otherwise i
 | Crisis notice, "Get connected" call to action, leaf divider (edit once, updates everywhere) | **Appearance → Editor → Patterns → Own & Become** (synced patterns) |
 | Add a section to any page | In the editor: **+ → Patterns → "Own & Become: sections"** |
 | Colours and fonts site-wide | **Appearance → Editor → Styles** |
-| Form fields and the email address it sends to | **Contact → Contact Forms → Own and Become contact form** (the **Mail** tab) |
+| Form fields and the email address it sends to (info@ownandbecome.com) | **Contact → Contact Forms → Own and Become contact form** (the **Mail** tab) |
 | SEO title and description of a page | The page's editor, in the *SEO Framework* box at the bottom |
 | Blog posts and categories | **Posts** |
 
