@@ -20,6 +20,8 @@ A complete, multi-page website for the Own & Become psychotherapy practice. It's
 | **Contact Form 7** | The contact / consult request form. Free, lightweight, no upsells. |
 | **Honeypot for Contact Form 7** | Invisible spam protection: no CAPTCHA puzzles for anxious visitors. (Cloudflare Turnstile, which is also free, is built into Contact Form 7 if extra protection is ever needed.) |
 | **The SEO Framework** | SEO titles, meta descriptions and the XML sitemap (`/sitemap.xml`). Lightweight, no upsells. |
+| **WP Mail SMTP** | Sends website email (the contact form) through the info@ownandbecome.com mailbox at Hostinger, so it reaches the inbox, not Junk. |
+| **Flamingo** | Keeps a copy of every contact-form message in the dashboard (**Contact → Flamingo**), including ones flagged as spam, so nothing is lost. |
 
 Everything else is core WordPress: the FAQ uses the built-in **Accordion** block, the menu is a built-in **Navigation** menu, and the fonts (Lora and Nunito Sans) are stored in the theme, so nothing loads from Google.
 
@@ -72,6 +74,14 @@ The section photos are royalty-free from [Pexels](https://www.pexels.com/license
 | `areas-fern.jpg` | Areas We Support, “Not listed” section | [18189850](https://www.pexels.com/photo/18189850/) |
 
 The therapist portrait on the live pages is uploaded in WordPress (Media Library); the theme file is only a placeholder.
+
+## Spam protection & email
+
+- **Where messages go:** the contact form sends to **info@ownandbecome.com** (Contact → Contact Forms → Own and Become contact form → Mail). Press Reply to answer the visitor.
+- **Sending:** WP Mail SMTP (Settings → WP Mail SMTP) uses `smtp.hostinger.com`, SSL, port 465, username info@ownandbecome.com. The mailbox **password must be entered there** (it is never stored in this repository). Use *Email Test* on that page to check.
+- **Bots:** an invisible honeypot field. For stronger protection add **Cloudflare Turnstile** (free): create a Turnstile widget for the domain at dash.cloudflare.com, then paste the Site Key and Secret Key in **Contact → Integration → Cloudflare Turnstile**. It's added to the form automatically.
+- **Sales pitches:** phrases such as "SEO services", "link building", "first page of Google" are listed in **Settings → Discussion → Disallowed Comment Keys**. Matching form messages are treated as spam: not emailed, but kept in **Contact → Flamingo → Inbound Messages → Spam**. Glance at that list now and then and click *Not spam* if a real enquiry was caught. Edit the list there (one phrase per line).
+- **Emails sent straight to info@:** in Hostinger webmail, *Settings → Filters*: add a rule "if Subject or Body contains SEO services / backlinks / lead generation / web design services → move to folder *Sales pitches*", and block persistent senders with *Block sender*.
 
 ## Placeholders
 

@@ -81,7 +81,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"className":"ob-hint","fontSize":"small","textColor":"muted"} -->
-<p class="ob-hint has-muted-color has-text-color has-small-font-size">Please don’t include sensitive or detailed health information in this form. We’ll talk about the details together, privately.</p>
+<p class="ob-hint has-muted-color has-text-color has-small-font-size">Please don’t include sensitive or detailed health information in this form. We’ll talk about the details together, privately. This form is for therapy enquiries only; we don’t accept sales or marketing pitches.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"className":"ob-form","layout":{"type":"default"}} -->

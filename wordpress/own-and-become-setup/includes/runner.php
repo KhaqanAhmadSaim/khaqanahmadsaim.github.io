@@ -55,7 +55,21 @@ function ob_setup_settings( &$log ) {
 	update_option( 'default_ping_status', 'closed' );
 	update_option( 'permalink_structure', '/%postname%/' );
 	$GLOBALS['wp_rewrite']->set_permalink_structure( '/%postname%/' );
-	$log[] = 'Settings: title, tagline, time zone (Toronto), Post name permalinks, comments off for new content.';
+	// Sales-pitch phrases: Contact Form 7 treats matching messages as spam (Flamingo keeps a copy to review).
+	if ( '' === trim( (string) get_option( 'disallowed_keys', '' ) ) ) {
+		update_option( 'disallowed_keys', implode( "\n", ob_setup_spam_phrases() ) );
+	}
+	$log[] = 'Settings: title, tagline, time zone (Toronto), Post name permalinks, comments off for new content, sales-pitch word list.';
+}
+
+/**
+ * Phrases typical of unsolicited sales and marketing pitches. Kept to phrases a
+ * therapy client is unlikely to write. Edit in Settings → Discussion → Disallowed Comment Keys.
+ *
+ * @return string[]
+ */
+function ob_setup_spam_phrases() {
+	return array( 'seo services', 'search engine optimization', 'search engine optimisation', 'backlinks', 'link building', 'guest post', 'sponsored post', 'rank on google', 'rank higher on google', 'first page of google', 'page 1 of google', 'increase your website traffic', 'boost your online presence', 'lead generation', 'qualified leads', 'more clients for your practice', 'grow your practice', 'marketing services', 'digital marketing services', 'social media management', 'website redesign', 'web design services', 'web development services', 'app development', 'virtual assistant services', 'outsourcing services', 'business proposal', 'partnership opportunity', 'collaboration opportunity', 'limited time offer', 'free audit', 'free website audit', 'unsubscribe', 'crypto', 'casino' );
 }
 
 /**
@@ -238,10 +252,11 @@ function ob_setup_form( &$state, &$log ) {
 	$props['form']                         = ob_setup_form_markup();
 	$props['mail']['recipient']            = 'info@ownandbecome.com';
 	$props['mail']['subject']              = 'New website enquiry from [your-name]';
-	$props['mail']['sender']               = 'Own & Become website <wordpress@' . wp_parse_url( home_url(), PHP_URL_HOST ) . '>';
+	$props['mail']['sender']               = 'Own & Become website <info@ownandbecome.com>';
 	$props['mail']['body']                 = ob_setup_form_mail_body();
 	$props['mail']['additional_headers']   = 'Reply-To: [your-email]';
 	$props['mail_2']['active']             = false;
+	$props['additional_settings']          = 'flamingo_subject: "Website enquiry from [your-name]"';
 	$props['messages']['mail_sent_ok']     = 'Thank you for reaching out. We’ll get back to you within 3–5 business days.';
 	$props['messages']['validation_error'] = 'A few fields need your attention. Please check the highlighted fields and try again.';
 	$props['messages']['mail_sent_ng']     = 'Sorry, something went wrong and your message wasn’t sent. Please try again later, or contact us by phone.';
