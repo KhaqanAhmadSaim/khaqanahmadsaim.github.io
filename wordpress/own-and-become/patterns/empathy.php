@@ -65,7 +65,7 @@
 
 <!-- wp:column {"width":"45%","verticalAlignment":"center"} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:45%"><!-- wp:image {"sizeSlug":"full","linkDestination":"none","className":"is-style-soft ob-reveal"} -->
-<figure class="wp-block-image size-full is-style-soft ob-reveal"><img src="<?php echo own_and_become_asset( 'images/photos/not-alone-mug.jpg' ); ?>" alt="Hands holding a warm mug beside a misty window."/></figure>
+<figure class="wp-block-image size-full is-style-soft ob-reveal"><img src="<?php echo own_and_become_asset( 'images/photos/not-alone-plant.jpg' ); ?>" alt="A small plant on a dresser, catching the last of the evening light."/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph {"align":"center","fontFamily":"heading","fontSize":"large","textColor":"primary"} -->

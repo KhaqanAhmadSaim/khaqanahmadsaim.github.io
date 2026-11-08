@@ -32,7 +32,7 @@
 <div class="wp-block-group alignwide"><!-- wp:columns {"verticalAlignment":"center","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|60","top":"var:preset|spacing|50"}}}} -->
 <div class="wp-block-columns are-vertically-aligned-center"><!-- wp:column {"width":"45%","verticalAlignment":"center"} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:45%"><!-- wp:image {"sizeSlug":"full","linkDestination":"none","className":"is-style-soft ob-reveal"} -->
-<figure class="wp-block-image size-full is-style-soft ob-reveal"><img src="<?php echo own_and_become_asset( 'images/photos/together-chairs.jpg' ); ?>" alt="Two chairs facing each other across a small round table in a warm, quiet room."/></figure>
+<figure class="wp-block-image size-full is-style-soft ob-reveal"><img src="<?php echo own_and_become_asset( 'images/photos/about-hands.jpg' ); ?>" alt="Two people holding hands in warm candlelight."/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 

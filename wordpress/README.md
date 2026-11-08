@@ -64,14 +64,14 @@ The section photos are royalty-free from [Pexels](https://www.pexels.com/license
 | File | Where | Pexels photo |
 |---|---|---|
 | `hero-armchair.jpg` | Home, top (arch frame) | [40059237](https://www.pexels.com/photo/40059237/) |
-| `not-alone-mug.jpg` | Home, “This isn’t how you thought life would feel” | [15317909](https://www.pexels.com/photo/15317909/) |
+| `not-alone-plant.jpg` | Home, “This isn’t how you thought life would feel” | [20643351](https://www.pexels.com/photo/20643351/) |
 | `own-soil.jpg` | Home, “Own” card | [31374933](https://www.pexels.com/photo/31374933/) |
 | `become-fern.jpg` | Home, “Become” card | [13079522](https://www.pexels.com/photo/13079522/) |
-| `together-chairs.jpg` | About | [17066896](https://www.pexels.com/photo/17066896/) |
+| `about-hands.jpg` | About | [6134941](https://www.pexels.com/photo/6134941/) |
 | `online-session.jpg` | Services, “Not sure” section | [8473914](https://www.pexels.com/photo/8473914/) |
 | `areas-fern.jpg` | Areas We Support, “Not listed” section | [18189850](https://www.pexels.com/photo/18189850/) |
 
-The therapist portrait is still a placeholder: replace it with a real photo.
+The therapist portrait on the live pages is uploaded in WordPress (Media Library); the theme file is only a placeholder.
 
 ## Placeholders
 
