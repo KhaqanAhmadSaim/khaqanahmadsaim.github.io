@@ -23,7 +23,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"fontSize":"large","textColor":"primary-deep"} -->
-<p class="has-primary-deep-color has-text-color has-large-font-size"><strong>Registered Psychotherapist (Qualifying)</strong><br>Clinic Founder &amp; Owner · RP (Qualifying) · MACP</p>
+<p class="has-primary-deep-color has-text-color has-large-font-size"><strong>Registered Psychotherapist (Qualifying)</strong><br>Clinic Founder &amp; Owner</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"fontSize":"small"} -->
@@ -60,8 +60,8 @@
 <div class="wp-block-group alignwide"><!-- wp:columns {"verticalAlignment":"top","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|60","top":"var:preset|spacing|50"}}}} -->
 <div class="wp-block-columns are-vertically-aligned-top"><!-- wp:column {"width":"58%","verticalAlignment":"top"} -->
 <div class="wp-block-column is-vertically-aligned-top" style="flex-basis:58%"><!-- wp:group {"style":{"spacing":{"blockGap":"1.1rem"}},"layout":{"type":"default"}} -->
-<div class="wp-block-group"><!-- wp:heading {"fontSize":"x-large"} -->
-<h2 class="wp-block-heading has-x-large-font-size">A little about me</h2>
+<div class="wp-block-group"><!-- wp:heading {"style":{"typography":{"fontWeight":"700"}},"fontSize":"large"} -->
+<h2 class="wp-block-heading has-large-font-size" style="font-weight:700">A little about me</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -72,16 +72,16 @@
 <p>These experiences, along with my passion for understanding people, are what drew me to counselling. I genuinely enjoy connecting with others, hearing their stories, and helping them find their way through difficult moments.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading {"fontSize":"large","level":3} -->
-<h3 class="wp-block-heading has-large-font-size">Beyond the therapy room</h3>
+<!-- wp:heading {"style":{"typography":{"fontWeight":"700"}},"fontSize":"large","level":3} -->
+<h3 class="wp-block-heading has-large-font-size" style="font-weight:700">Beyond the therapy room</h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
 <p>Outside of my work, I love spending time with my loved ones, exploring my creative side through art and crafts, and doing nails. I enjoy meaningful conversations, genuine connections, and finding joy in the little things that make life special.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:heading {"fontSize":"large","level":3} -->
-<h3 class="wp-block-heading has-large-font-size">Welcome to Own &amp; Become</h3>
+<!-- wp:heading {"style":{"typography":{"fontWeight":"700"}},"fontSize":"large","level":3} -->
+<h3 class="wp-block-heading has-large-font-size" style="font-weight:700">Welcome to Own &amp; Become</h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -229,8 +229,8 @@
 <div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--70)"><!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
 <div class="wp-block-group alignwide"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"grid","minimumColumnWidth":"20rem","columnCount":2}} -->
 <div class="wp-block-group"><!-- wp:group {"className":"is-style-card","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"},"blockGap":"1rem"},"dimensions":{"minHeight":"100%"}},"layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-card" style="min-height:100%;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)"><!-- wp:heading {"fontSize":"x-large"} -->
-<h2 class="wp-block-heading has-x-large-font-size">My approach to therapy</h2>
+<div class="wp-block-group is-style-card" style="min-height:100%;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)"><!-- wp:heading {"style":{"typography":{"fontWeight":"700"}},"fontSize":"large"} -->
+<h2 class="wp-block-heading has-large-font-size" style="font-weight:700">My approach to therapy</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
@@ -243,8 +243,8 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-card","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"},"blockGap":"1rem"},"dimensions":{"minHeight":"100%"}},"layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-card" style="min-height:100%;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)"><!-- wp:heading {"fontSize":"x-large"} -->
-<h2 class="wp-block-heading has-x-large-font-size">Education &amp; training</h2>
+<div class="wp-block-group is-style-card" style="min-height:100%;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)"><!-- wp:heading {"style":{"typography":{"fontWeight":"700"}},"fontSize":"large"} -->
+<h2 class="wp-block-heading has-large-font-size" style="font-weight:700">Education &amp; training</h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->

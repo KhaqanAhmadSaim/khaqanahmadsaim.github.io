@@ -177,6 +177,12 @@ mark.ob-placeholder,
 	.ob-topbar { display: none !important; }
 }
 
+/* No gap between the info bar and the menu bar (WordPress adds 20px between blocks by default),
+   so the menu bar sits flush with the top of the window once the info bar scrolls away. */
+.ob-site-header > .ob-mainbar {
+	margin-block-start: 0;
+}
+
 .ob-mainbar {
 	/* Solid (no backdrop-filter): a filter here would trap the full-screen mobile menu inside the bar */
 	background: var(--wp--preset--color--base);

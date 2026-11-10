@@ -28,7 +28,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"textColor":"primary-deep"} -->
-<p class="has-primary-deep-color has-text-color"><strong>Registered Psychotherapist (Qualifying)</strong><br>Clinic Founder &amp; Owner · RP (Qualifying) · MACP</p>
+<p class="has-primary-deep-color has-text-color"><strong>Registered Psychotherapist (Qualifying)</strong><br>Clinic Founder &amp; Owner</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"fontSize":"small"} -->
